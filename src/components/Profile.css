@@ -1,0 +1,25 @@
+.photo {
+    height: 200px;
+    width: 200px; 
+    margin-top: 1cm;
+    margin: auto;
+}
+
+.ico {
+    padding: 5px;
+    margin: auto;
+    margin-top: 5px;
+    color:white;
+  }
+
+  .icodiv {
+    padding-bottom: 10px;
+  }
+
+  .container {
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
