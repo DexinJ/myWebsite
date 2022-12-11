@@ -1,0 +1,24 @@
+.Page-footer {
+  background-color: #000c42;
+  min-height: 1rem;
+  position: absolute;
+  left:0;
+  bottom:0;
+  right:0;
+  width: 100%;
+}
+
+.Page {
+  text-align: left;
+  background-color: #e7e7e7;
+  min-height: 100vh;
+  display: center;
+  position: relative;
+}
+
+.Page-body{
+  margin: auto;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 2.5rem;
+}

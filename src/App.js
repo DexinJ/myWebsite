@@ -7,6 +7,7 @@ import FSileread from './pages/webProject';
 import Home from './pages';
 import { BrowserRouter as Router, Routes, Route}
     from 'react-router-dom';
+
 function App() {
     return (
         <Router>
