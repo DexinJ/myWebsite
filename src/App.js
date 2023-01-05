@@ -3,7 +3,8 @@ import './App.css';
 import React from "react";
 import Rage from './pages/rage';
 import AIproject from './pages/aiproject';
-import FSileread from './pages/webProject';
+import WebProject from './pages/webProject';
+import FSileread from './pages/fileread';
 import Home from './pages';
 import { BrowserRouter as Router, Routes, Route}
     from 'react-router-dom';
@@ -15,6 +16,7 @@ function App() {
             <Route exact path='/' element={<Home />} />
             <Route path='/rage' element={<Rage/>} />
             <Route path='/AI' element={<AIproject/>} />
+            <Route path='/web' element={<WebProject/>} />
             <Route path='/fileread' element={<FSileread/>} />
           </Routes>
         </Router>

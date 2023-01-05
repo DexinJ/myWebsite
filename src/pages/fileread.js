@@ -5,14 +5,14 @@ import "./page.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faArrowLeft} from '@fortawesome/free-solid-svg-icons'
 
-import im1 from './website1.png'
-import im2 from './website2.png'
-import im3 from './website3.png'
+import im1 from './fielread-sticky-header-c.PNG'
+import im2 from './fielread-multiselect-c.gif'
+
 
   
 const WebProject = () => {
   useEffect(() => {
-    document.title = 'Tony Jin: Web Projects';
+    document.title = 'Tony Jin: Fileread';
   }, []);
   return (
     <div className="Page">
@@ -23,11 +23,12 @@ const WebProject = () => {
         </header>
         <div className="Page-body">
         <h1>
-          <p>Web Projects</p>
+            <p>Fileread Projects</p>
           Goal
           </h1>
           <h2>
-          <p>‎ ‎ ‎ ‎ Creating websites with log-in and personal phone book for each user.</p>
+          ‎ ‎ ‎ ‎ Improving cosmetics by having a sticky header for the list of documents
+            And implementing shift-multi-select.
           </h2>
           <h1>
           Role
@@ -35,18 +36,15 @@ const WebProject = () => {
           <h2>
           ‎ ‎ ‎ ‎ programmer
           </h2>
-            <img src={im3} className = "projto"/>
+          <img src={im1} className = "projto"/> 
             <h2>
             <p>
-            ‎ ‎ ‎ ‎ These are class projects from web developement class.
-            Created using py4web, these projects uses a combination of python and javascript to create dynamic websites.
+            ‎ ‎ ‎ ‎ For this project, I reported to a manager whom assigned various tasks for me to tackle. 
+            I implemented a fixed header for a dynamically generated table and implemented shift-multi-select for elements within that table.
+            After finishing each task, I reported back to my manager and demonstrated my product.
             </p>
+            </h2>
             <img src={im2} className = "projto"/>
-            <p>
-            ‎ ‎ ‎ ‎ I created websites with a functioning login system. And an phone book app after the user have logged in. 
-            </p>
-            </h2> 
-            <img src={im1} className = "projto"/>
         </div>
         <footer className='Page-footer'></footer>
     </div>

@@ -24,7 +24,8 @@ const AIproject = () => {
             Goal
             </h1>
             <h2>
-              <p>Learn and practice multiple pathfinding and other AI algorithms</p>
+              <p>‎ ‎ ‎ ‎ Learn and practice multiple pathfinding and other AI algorithms</p>
+              <p>‎ </p>
               <div className="textfold">  
                 <p className="smalltext">These AI projects use the game Pacman to practice different AI and pathfinding techniques.                     
                   I used python 3 to program searches like depth-first search. Breadth-first search, A* search, and more.

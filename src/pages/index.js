@@ -5,6 +5,7 @@ import p1 from'../1c.png';
 import data from'../data';
 import p2 from './pacman1.png'
 import p3 from './website3.png'
+import p4 from './fielread-sticky-header-c.PNG'
 import { useEffect } from 'react';
 
 
@@ -23,7 +24,8 @@ const Home = () => {
         <div className = "rowt">
               <Project cover = {p1} content = {data.p1} link = "/rage"/>
               <Project cover = {p2} content = {data.p2}link = "/AI"/>
-              <Project cover = {p3} content = {data.p3}link = "/fileread"/>
+              <Project cover = {p3} content = {data.p3}link = "/web"/>
+              <Project cover = {p4} content = {data.p4}link = "/fileread"/>
         </div>
         <footer className='App-footer'></footer>
     </div> 

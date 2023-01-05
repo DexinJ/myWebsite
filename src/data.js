@@ -9,6 +9,8 @@ const data = {
     content:" "},
     p3: {title:"Web design projects",date:" ",
     content:" "},
+    p4: {title:"Fileread Projects",date:" ",
+    content:" "},
 }
 
 export default data

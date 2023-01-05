@@ -29,27 +29,27 @@ const Rage = () => {
           Goal
           </h1>
           <h2>
-          Create a platform game with phaser
+          ‎ ‎ ‎ ‎ Create a platform game with phaser
           </h2>
           <h1>
           Role
           </h1>
           <h2>
-          Level designer and programmer
+          ‎ ‎ ‎ ‎ Level designer and programmer
           </h2>
           <h1>
           Team
           </h1>
           <h2>
           <p>
-          1 Artist, 2 programmers including myself
+          ‎ ‎ ‎ ‎ 1 Artist, 2 programmers including myself
           </p>
           <p>
           This is a class project that required us to create a game with phaser.
           </p> 
           <img src={im1} className = "projto"/>
             <p>
-            For this project, I teamed up with two other classmates. 
+          For this project, I teamed up with two other classmates. 
             </p>
           
           <p>
