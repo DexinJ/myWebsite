@@ -27,8 +27,7 @@ const WebProject = () => {
           Goal
           </h1>
           <h2>
-          ‎ ‎ ‎ ‎ Improving cosmetics by having a sticky header for the list of documents
-            And implementing shift-multi-select.
+          ‎ ‎ ‎ ‎ Implementing a sticky header and shift-multi-select for the documents table.
           </h2>
           <h1>
           Role

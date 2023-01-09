@@ -20,8 +20,6 @@ function App() {
             <Route path='/fileread' element={<FSileread/>} />
           </Routes>
         </Router>
-      
-
     );
 }
 

@@ -28,13 +28,13 @@ const AIproject = () => {
               <p>‎ </p>
               <div className="textfold">  
                 <p className="smalltext">These AI projects use the game Pacman to practice different AI and pathfinding techniques.                     
-                  I used python 3 to program searches like depth-first search. Breadth-first search, A* search, and more.
-                  I also use it to create different types of AI agents like knowledged based agents and reactive agents.                
+                I used python 3 to program searches like depth-first search. Breadth-first search, A* search, and more.
+                I also use it to create different types of AI agents like knowledge-based agents and reactive agents.                
                 </p>
                 <img src={im1} className = "projto"/>
               </div> 
               <img src={im2} className = "projto"/>
-              <p>At the end of the term, we pitted ais against each other in a Pacman tournament to expierence AIs in a competative enviroment.</p>
+              <p>At the end of the term, we pitted AIs against each other in a Pacman tournament to experience AIs in a competitive environment.</p>
           </h2>
         </div>
         <footer className='Page-footer'/>

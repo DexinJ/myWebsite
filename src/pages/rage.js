@@ -45,32 +45,31 @@ const Rage = () => {
           ‎ ‎ ‎ ‎ 1 Artist, 2 programmers including myself
           </p>
           <p>
-          This is a class project that required us to create a game with phaser.
+          We decided to create a game with phaser for this project.
           </p> 
           <img src={im1} className = "projto"/>
             <p>
-          For this project, I teamed up with two other classmates. 
+            For this project, I teamed up with two other classmates.
             </p>
           
           <p>
-          After discussion, we had decided that we will make a platformer, and I will be the level designer and programmer.
+          After discussion, we decided that we will make a platformer, and I will be the level designer and programmer.
           </p>
           
 
           <img src={im4}/>
           <p> 
-            I took the images sent by our artist and converted them into tile maps, and used these tiles to 
-          create the level. 
+          I took the images sent by our artist and converted them into tile maps, and used these tiles to create the level.
           </p>
          
           <p> 
-            I also used javascript to program character movement, collision behavior and more.
+          I also used javascript to program character movement, collision behavior, and more.
           </p>
          
           <img src={im3} className = "projto"/>
           <p>
-          After compliting the game, we conducted playtest sessions where other classmates playtest our games
-          and gave feedback and suggestions, after which we adjust our game accordingly.
+          After completing the game, we conducted playtest sessions where other classmates playtested 
+          our games and gave feedback and suggestions, after which we adjusted our game accordingly.
           </p>
           </h2>
           <a href="https://dexinjin.itch.io/rage" target="_blank" rel="noopener noreferrer">

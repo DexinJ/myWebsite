@@ -38,12 +38,12 @@ const WebProject = () => {
             <img src={im3} className = "projto"/>
             <h2>
             <p>
-            ‎ ‎ ‎ ‎ These are class projects from web developement class.
-            Created using py4web, these projects uses a combination of python and javascript to create dynamic websites.
+            ‎ ‎ ‎ ‎ These are class projects from the web development class.
+            Created using py4web, these projects use a combination of python and javascript to create dynamic websites.
             </p>
             <img src={im2} className = "projto"/>
             <p>
-            ‎ ‎ ‎ ‎ I created websites with a functioning login system. And an phone book app after the user have logged in. 
+            ‎ ‎ ‎ ‎ I created websites with a functioning login system. And a phone book app after the user has logged in. 
             </p>
             </h2> 
             <img src={im1} className = "projto"/>
