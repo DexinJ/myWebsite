@@ -18,9 +18,14 @@
 
 .Page-body{
   margin: auto;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: 20%;
+  padding-right: 20%;
   padding-bottom: 2.5rem;
+  display: center;
+}
+
+.Page-text{
+  font-size: calc(4px + 2vmin);
 }
 
 .indent{

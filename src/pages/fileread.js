@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import subHeader from "../components/subHeader";
+import Subheader from "../components/subHeader";
 import "../App.css"
 import "./page.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -16,14 +16,10 @@ const WebProject = () => {
   }, []);
   return (
     <div className="Page">
-        <header className="App-header">
-        <div className='icodiv'>
-        <a className='ico' href='/'><FontAwesomeIcon icon={faArrowLeft} size="2xl"/></a>
-        </div>
-        </header>
+        <Subheader/>
         <div className="Page-body">
         <h1>
-            <p>Fileread Projects</p>
+            <p>Fileread AI</p>
           Goal
           </h1>
           <h2>
@@ -38,9 +34,10 @@ const WebProject = () => {
           <img src={im1} className = "projto"/> 
             <h2>
             <p>
-            ‎ ‎ ‎ ‎ For this project, I reported to a manager whom assigned various tasks for me to tackle. 
-            I implemented a fixed header for a dynamically generated table and implemented shift-multi-select for elements within that table.
-            After finishing each task, I reported back to my manager and demonstrated my product.
+            ‎ ‎ ‎ ‎ For this project, I reported to a manager who assigned 
+            various tasks for me to tackle. I implemented a fixed header for a dynamically generated 
+            table and shift-multi-select for elements within that table. After finishing each task, 
+            I reported to my manager and demonstrated my product.
             </p>
             </h2>
             <img src={im2} className = "projto"/>

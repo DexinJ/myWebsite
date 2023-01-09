@@ -1,9 +1,8 @@
 import React, { useEffect } from "react";
-import subHeader from "../components/subHeader";
+import Subheader from "../components/subHeader";
 import "../App.css"
 import "./page.css"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {faArrowLeft} from '@fortawesome/free-solid-svg-icons'
+
 import im1 from './pacman1.png'
 import im2 from './pacman2.png'
   
@@ -13,11 +12,7 @@ const AIproject = () => {
   }, []);
   return (
     <div className="Page">
-        <header className="App-header">
-        <div className='icodiv'>
-        <a className='ico' href='/'><FontAwesomeIcon icon={faArrowLeft} size="2xl"/></a>
-        </div>
-        </header>
+        <Subheader/>
         <div className="Page-body">
         <h1>
             <p>AI Class projects</p>
