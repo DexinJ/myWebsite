@@ -40,7 +40,9 @@ const AIproject = () => {
                 <p>At the end of the term, we pitted AIs against each other in a Pacman tournament to experience AIs in a competitive environment.</p>
                <div className="caption">
               <img src={im2} className = "demoImage"/>
-              <p>A visulization of Depth-First Search. The color becomes lighter as more spaces was visited.</p>
+              <p>A visualization of Depth-First Search. Pacman is trying to find a path to the food 
+                at the bottom right. The color records the paths he has searched, and becomes lighter 
+                with each step.</p>
               </div>
               
         </div>

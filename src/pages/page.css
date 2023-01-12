@@ -14,11 +14,13 @@
   background-color: #e7e7e7;
   min-height: 100vh;
   position: relative;
+  justify-content: center;
 }
 
 .Page-body{
   margin: auto;
   padding-bottom: 2.5rem;
+  max-width: 95%;
 }
 
 .Page-text{

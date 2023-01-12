@@ -21,7 +21,7 @@ const WebProject = () => {
           <h1>
             <p>Web Projects</p>          
           </h1>
-          <img src={im1} className = "demoImage"/>
+          <img src={im2} className = "demoImage"/>
           <div className="twintext5050">
               <div className="box">
                 <p style={{ fontWeight: 'bold' }}>Goal</p>
@@ -41,7 +41,7 @@ const WebProject = () => {
                 </div>
               </div>
           </div>
-          <img src={im2} className = "demoImage"/>
+          <img src={im1} className = "demoImage"/>
           
             
         </div>
