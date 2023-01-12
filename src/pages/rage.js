@@ -60,7 +60,7 @@ const Rage = () => {
             </div>        
             <div className="caption">
               <img src={im4} className = "demoImage"/>
-              <p className="twincaption">The tile sheet, this will be converted into a tile map and be the bases for all of the platforms in the game.</p>
+              <p className="twincaption">The tile sheet. It is converted into a tile map and is the basis for this game's platforms.</p>
             </div>
           </div>
             <div>             
