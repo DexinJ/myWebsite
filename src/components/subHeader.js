@@ -8,7 +8,7 @@ function subHeader() {
     const name = <span style={{color : 'white'}}>Tony Jin</span>
     return(
         <header className="Sub-header">
-            <div id="HASH">
+            <div className = "header-text">
                 <div>
                     <a style={{ fontWeight: 'bold' }} title="Home" href ='/'  className='link'>{name}</a>
                 </div>

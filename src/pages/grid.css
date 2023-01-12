@@ -1,0 +1,40 @@
+
+
+
+@media only screen and (min-width:768px) {
+.grid-item{
+    background-color: #97a1cc;
+    border-color:  rgb(255, 255, 255);
+    border-style: solid;
+    display: flex;
+    min-width: none;
+    min-height: 300px;
+
+}
+.grid-page{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-auto-rows: 300px;
+    background-color: gray;
+    grid-gap: 5px;
+    justify-content: center;
+  }
+
+  .grid-header{
+    grid-column: 1 / -1;
+  }
+
+  .grid-sidebar{
+    grid-column:1/2;
+    grid-row-start: 2;
+    grid-row-end: auto;
+  }
+
+  .box-item{
+    background-color: #9bcc97;
+    border-color:  rgb(0, 0, 0);
+    border-style: solid;
+    width: 300px;
+    min-width: none;
+  }
+}

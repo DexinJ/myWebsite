@@ -14,9 +14,9 @@ function Profile() {
     return(
     <div className='container'>
       <img src={photo} style={{ borderRadius: '50%', display: "block" }} className="photo" alt="photo" />
-      <p style={{ fontSize: 30, color : 'grey'}}>
+      <p style={{ color : 'grey'}}>
         Hello, I am {name}</p>
-        <p style={{ fontSize: 30, color : 'grey'}}>I am a software engineer specialized in <span style={{color : 'white'}}>Python, C++, Java, and React.js</span>
+        <p style={{ color : 'grey'}}>I am a software engineer specialized in <span style={{color : 'white'}}>Python, C++, Java, and React.js</span>
       </p>
       <p><a title="Resume" href = {PDF} className='link' target="_blank">Resume</a></p>
         <div className='icodiv'>

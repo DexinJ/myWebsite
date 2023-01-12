@@ -1,32 +1,48 @@
-#HASH {
-    padding-left: 20%;
-  }
-
-  .link{
-    color: white;
-    text-decoration: none;
-  }
-
-  .link-list{
-    position: relative;
-    display: flex;
-    gap: 30px;
-    width: 50%;
-  }
-
-  .list-item{
-    color: rgb(207, 207, 207);
-    text-decoration: none;
-    font-size: calc(4px + 2vmin);;
-  }
-
-  .list-item:hover{
-    color: white;
-  }
-
-  .Sub-header {
+.Sub-header {
     background-color: #000c42;
     font-size: calc(10px + 2vmin);
     color: rgb(0, 0, 0);
-    min-height: 5%;
+    display:grid;
+    grid-template-columns: 2% 98%;
+    position: sticky;
+    top: 0%;
   }
+.link{
+    color: white;
+    text-decoration: none;
+  }
+  .list-item{
+    color: rgb(207, 207, 207);
+    text-decoration: none;
+    font-size: calc(8px + 1vmin);;
+  }
+  .list-item:hover{
+    color: white;
+  }
+  .link-list{
+    display: flex;
+    justify-content: space-between;
+    max-width: 50%;    
+  }
+  .header-text{
+    grid-column: 2/3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+@media only screen and (min-width:768px) { 
+  .header-text{
+    width: 760px;
+  }
+  .Sub-header {
+    background-color: #000c42;
+    font-size: calc(2vmin);
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 0%;
+
+  }
+
+}

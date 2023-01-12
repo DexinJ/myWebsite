@@ -1,12 +1,13 @@
 import React from 'react';
 import Profile from '../components/Profile';
 import Project from '../components/Project';
-import p1 from'../1c.png';
+import p1 from'./1bc.png';
 import data from'../data';
-import p2 from './pacman1.png'
-import p3 from './website3.png'
-import p4 from './fielread-sticky-header-c.PNG'
+import p2 from './pacmanc1.png'
+import p3 from './websitec.png'
+import p4 from './fielread-sticky-header-cc.png'
 import { useEffect } from 'react';
+
 
 
 
@@ -16,6 +17,11 @@ const Home = () => {
   useEffect(() => {
     document.title = 'Tony Jin';
   }, []);
+  const layouts = {lg:[
+    { i: "a", x: 0, y: 0, w: 1, h: 2, static: true },
+    { i: "b", x: 1, y: 0, w: 3, h: 2, minW: 2, maxW: 4 },
+    { i: "c", x: 4, y: 0, w: 1, h: 2 }
+  ]};
   return (
     <div className="App">
         <header className="App-header">

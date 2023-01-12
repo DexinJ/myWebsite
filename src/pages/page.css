@@ -1,3 +1,4 @@
+
 .Page-footer {
   background-color: #000c42;
   min-height: 1rem;
@@ -12,22 +13,85 @@
   text-align: left;
   background-color: #e7e7e7;
   min-height: 100vh;
-  display: center;
   position: relative;
 }
 
 .Page-body{
   margin: auto;
-  padding-left: 20%;
-  padding-right: 20%;
   padding-bottom: 2.5rem;
-  display: center;
 }
 
 .Page-text{
   font-size: calc(4px + 2vmin);
 }
 
-.indent{
-  text-indent: 40px
+.spacer{
+  margin-bottom: 20px;
+}
+
+.demoImage{
+  max-width: 100%;
+  height: auto;
+}
+
+.Parallel-text{
+  margin-right: 20%;
+}
+
+.caption{
+  color:rgb(80, 80, 80);
+  text-align: center;
+  font-style: italic;
+}
+
+@media only screen and (min-width:768px) {
+  .Page-footer {
+    background-color: #000c42;
+    min-height: 1rem;
+    position: absolute;
+    left:0;
+    bottom:0;
+    right:0;
+    width: 100%;
+  }
+  .box{
+    position: relative;
+    /*background-color: #8b93ff;*/
+  }
+  .batext{
+    position: absolute;
+    bottom: 0;
+  }
+  .Page {
+    text-align: left;
+    background-color: #e7e7e7;
+    min-height: 100vh;
+    position: relative;
+    font-size: calc(10px + 1vmin);
+  }
+  .Page-body{
+    margin: auto;
+    padding-bottom: 2.5rem;
+    width:760px;
+    /*background-color: #ff2222;*/
+  }
+  .twintext{
+    display: grid;
+    grid-template-columns: 1.1fr 4fr;
+    gap: 10px;
+  }
+  .twintexttwo{
+    display: grid;
+    grid-template-columns: 4fr 2fr;
+    gap: 10px;
+  }
+  .twintext5050{
+    display: grid;
+    grid-template-columns: 1fr 1.8fr;
+    gap: 10px;
+    /*background-color: #e7e7e7;*/
+  }
+  .twincaption{
+    font-size: calc(5px + 1vmin);
+  }
 }

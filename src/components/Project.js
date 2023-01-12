@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 import'./Project.css'
 import VModal from "./VModal";
-import Button from "react-bootstrap/Button";
-import Modal from "react-bootstrap/Modal";
+
+
 
 function Project(props) {
-    const [modalShow, setModalShow] = React.useState(false);
+
     const [mouseHover, setMouseHover] = React.useState(false);
     const handleClick = (myLink) => {
         window.location.href=myLink;
@@ -30,14 +30,7 @@ function Project(props) {
                 </h1>}
             </div>
   
-            <VModal
-            show={modalShow}
-            onHide={() => setModalShow(false)}
-            title = {props.content.title}
-            date = {props.content.date}
-            content = {props.content.content}
-            image = {props.cover}
-            />
+
       </div>
     );
 }
