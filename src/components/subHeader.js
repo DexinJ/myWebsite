@@ -9,10 +9,8 @@ function subHeader() {
     return(
         <header className="Sub-header">
             <div className = "header-text">
-                <div>
-                    <a style={{ fontWeight: 'bold' }} title="Home" href ='/'  className='link'>{name}</a>
-                </div>
                 <div className="link-list">
+                    <a style={{ fontWeight: 'bold' }} title="Home" href ='/'  className='list-item'>{name}</a>
                     <a className="list-item" title="Resume" href = {PDF} target="_blank">Resume</a>
                     <a className="list-item" title="Linkedin" href='https://www.linkedin.com/in/dexin-jin/' target="_blank">Linkedin</a>
                     <a className="list-item" title="Github" href='https://github.com/DexinJ' target="_blank">Github</a>

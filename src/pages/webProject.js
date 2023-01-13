@@ -18,30 +18,43 @@ const WebProject = () => {
     <div className="Page">
        <Subheader/>
         <div className="Page-body">
-          <h1>
-            <p>Web Projects</p>          
+          <h1 className="tmarg">
+            <p className="bmarg">Web Projects</p>          
           </h1>
-          <img src={im2} className = "demoImage"/>
-          <div className="twintext5050">
+          <img src={im2} className = "demoImage "/>
+          <div className="twintext5050 tmarg bmarg">
               <div className="box">
-                <p style={{ fontWeight: 'bold' }}>Goal</p>
-                <p>Create a personalized phonebook website with a login system.</p>
-                <p style={{ fontWeight: 'bold' }}>Role</p>
-                <p>Programmer</p>
+                <div>
+                  <p style={{ fontWeight: 'bold' }}>Timespan</p>
+                  <p>3 weeks</p>
+                </div>
+                <div>
+                  <p style={{ fontWeight: 'bold' }}>Role</p>
+                  <p>Programmer</p>
+                </div>
               </div>
               {/*<img src={im3} className = "projto"/>*/}
               <div className="box">
-                <div className="batext">
-                <p>                
-                Using py4web, these projects utilizes a combination of python and javascript to create dynamic websites.
-                </p>
-                <p>
-                 I created a website with a login function. Users can add, edit, and delete their contacts and the contacts' phone numbers after logging in.
-                </p>
+                
+                <div>
+                  <div className="bmarg">
+                    <p style={{ fontWeight: 'bold' }}>Goal</p>
+                    <p>Create a personalized phonebook website with a login system.</p>
+                  </div>
+                  <div>
+                    <p>                
+                      Using py4web, these projects utilizes a combination of python and javascript 
+                      to create dynamic websites.
+                    </p>
+                    <p>
+                      I created a website with a login function. Users can add, edit, and delete 
+                      their contacts and the contacts' phone numbers after logging in.
+                    </p>
+                  </div>
                 </div>
               </div>
           </div>
-          <img src={im1} className = "demoImage"/>
+          <img src={im1} className = "demoImage bmarg"/>
           
             
         </div>

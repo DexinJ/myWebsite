@@ -19,51 +19,66 @@ const Rage = () => {
         <Subheader/>
         <div className="Page-body">
         
-          <h1>
+          <h1 className="tmarg bmarg">
             <p>Platform Game Design</p>
           </h1>
-          <div className="spacer">
+          <div className="bmarg">
             <img src={im1} className = "demoImage"/>
           </div>
-          <div className="twintext">
-            <div>
-              <p style={{ fontWeight: 'bold' }}>Goal</p>
-              
-              <p>Create a platform game with phaser</p>
-              
-              <p style={{ fontWeight: 'bold' }}>Role</p>
-              
-              <p>Level designer and Programmer</p>
-              
-              <p style={{ fontWeight: 'bold' }}>Team</p>
+          <div className="twintext bmarg">
+            <div className="bmarg">
+              <div>
+                
+                <p style={{ fontWeight: 'bold' }}>Timespan</p>
+                
+                <p>10 weeks</p>
+              </div>
+              <div>
+                
+                <p style={{ fontWeight: 'bold' }}>Role</p>
+                
+                <p>Level designer, Programmer</p>
+              </div>
+              <div>
+                
+                <p style={{ fontWeight: 'bold' }}>Team</p>
 
-              <p>
-                1 Artist, 2 programmers including myself
-              </p>
+                <p>
+                  1 Artist,<br/> 2 Programmers including myself
+                </p>
+              </div>
             </div>
             <div>
             
             <img src={im3} className = "demoImage"/>
             </div>
           </div>
-          <div className="twintexttwo">  
+          <div className="twintexttwo bmarg">
             <div>
-                <p>
-                  For this project, I teamed up with two other classmates.
+              <div className="bmarg">
+                  <p style={{ fontWeight: 'bold' }}>Goal</p>
+                  
+                  <p>Create a platform game with phaser</p>
+              </div>  
+              <div>
+                <p style={{ fontWeight: 'bold' }}>Process</p>
+                  <p>
+                    For this project, I teamed up with two other classmates.
+                  </p>
+                  <p>
+                    We decided to create a game with phaser for this project.
+                  </p> 
+                  <p>
+                    After discussion, we decided to make a platformer, and I would be the level designer and programmer.
                 </p>
-                <p>
-                  We decided to create a game with phaser for this project.
-                </p> 
-                <p>
-                  After discussion, we decided to make a platformer, and I would be the level designer and programmer.
-              </p>
-            </div>        
+              </div>    
+            </div>    
             <div className="caption">
               <img src={im4} className = "demoImage"/>
               <p className="twincaption">The tile sheet. It is converted into a tile map and is the basis for this game's platforms.</p>
             </div>
           </div>
-            <div>             
+            <div className="bmarg">             
               <p> 
                 I converted the images sent by our artist into tile maps and used these tiles to create the level.
               </p>
@@ -79,8 +94,8 @@ const Rage = () => {
               </p>
             </div>
             
-          <a href="https://dexinjin.itch.io/rage" title="https://dexinjin.itch.io/rage" target="_blank" rel="noopener noreferrer">
-            <h1>Try the Game</h1>
+          <a  href="https://dexinjin.itch.io/rage" title="https://dexinjin.itch.io/rage" target="_blank" rel="noopener noreferrer">
+            <h1 className="bmarg">Try the Game</h1>
           </a>
         </div>
         <footer className='Page-footer'></footer>

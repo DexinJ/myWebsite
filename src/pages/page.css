@@ -19,8 +19,9 @@
 
 .Page-body{
   margin: auto;
-  padding-bottom: 2.5rem;
   max-width: 95%;
+  padding-top: 40px;
+  padding-bottom: 56px;
 }
 
 .Page-text{
@@ -58,6 +59,9 @@
   }
   .box{
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     /*background-color: #8b93ff;*/
   }
   .batext{
@@ -72,8 +76,6 @@
     font-size: calc(10px + 1vmin);
   }
   .Page-body{
-    margin: auto;
-    padding-bottom: 2.5rem;
     width:760px;
     /*background-color: #ff2222;*/
   }

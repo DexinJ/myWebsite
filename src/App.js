@@ -20,7 +20,6 @@ function App() {
             <Route path='/AI' element={<AIproject/>} />
             <Route path='/web' element={<WebProject/>} />
             <Route path='/fileread' element={<FSileread/>} />
-            <Route path='/grid' element={<Gridtest/>} />
           </Routes>
         </Router>
     );

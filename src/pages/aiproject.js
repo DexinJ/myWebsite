@@ -14,31 +14,41 @@ const AIproject = () => {
     <div className="Page">
         <Subheader/>
         <div className="Page-body">
-          <h1>
+          <h1 className="tmarg bmarg">
             <p>AI Class projects</p>
           </h1>
             
-              <div className="textfold"> 
+              <div className="textfold bmarg"> 
               <div className="smallimage">
               <img src={im1} className = "demoImage"/>
               </div>
               <div>
-              <p style={{ fontWeight: 'bold' }}>Goal</p>
-            <p>Explore multiple pathfinding and AI algorithms in a game.</p>
-            <p style={{ fontWeight: 'bold' }}> 
-                Role
-              </p>
-              <p>
-                Programmer
-              </p>
+                <div className="bmarg">
+                  <p style={{ fontWeight: 'bold' }}>Timespan</p>
+                  <p>10 weeks</p>
+                </div>
+                <div>
+                  <p style={{ fontWeight: 'bold' }}> 
+                    Role
+                  </p>
+                  <p>
+                    Programmer
+                  </p>
+                </div>
               </div> 
               </div>
+              <div className="bmarg">
+                <div className="bmarg">
+                  <p style={{ fontWeight: 'bold' }}>Goal</p>
+                  <p>Explore multiple pathfinding and AI algorithms in a game.</p>
+                </div>
               <p>These AI projects use the game Pacman to practice different AI and pathfinding techniques.                     
                 I used python 3 to program searches like depth-first search. Breadth-first search, A* search, and more.
                 I also use it to create different types of AI agents like knowledge-based agents and reactive agents.                
                 </p>
                 <p>At the end of the term, we pitted AIs against each other in a Pacman tournament to experience AIs in a competitive environment.</p>
-               <div className="caption">
+              </div>
+               <div className="caption bmarg">
               <img src={im2} className = "demoImage"/>
               <p>A visualization of Depth-First Search. Pacman (the yellow circle) is trying to find
                  a path to the food (the white dot) at the bottom left. The algorithm searches the 

@@ -10,15 +10,18 @@ import PDF from'../pages/Tony_Jin_Resume.pdf';
 import { Link } from 'react-router-dom';
 
 function Profile() {
-    const name = <span style={{color : 'white'}}>Tony Jin</span>
+    const name = <span style={{color : '#efecca'}}>Tony Jin</span>
     return(
     <div className='container'>
       <img src={photo} style={{ borderRadius: '50%', display: "block" }} className="photo" alt="photo" />
-      <p style={{ color : 'grey'}}>
-        Hello, I am {name}</p>
-        <p style={{ color : 'grey'}}>I am a software engineer specialized in <span style={{color : 'white'}}>Python, C++, Java, and React.js</span>
-      </p>
-      <p><a title="Resume" href = {PDF} className='link' target="_blank">Resume</a></p>
+      <div className='bmarg'>
+        <p style={{ color : '#7F7F7F'}}>
+          Hello, I am {name}<br/>I am a software engineer specialized in <span style={{color : '#efecca'}}>Python, C++, Java, and React.js</span>
+        </p>
+      </div>
+      <div className='bmarg'>
+      <p><a title="Resume" href = {PDF} className='link botton' target="_blank">View Resume</a></p>
+      </div>
         <div className='icodiv'>
         <a className='ico' title="Linkedin" href='https://www.linkedin.com/in/dexin-jin/' target="_blank"><FontAwesomeIcon icon={faLinkedin} size="xl"/></a>
         <a className='ico' title="Github" href='https://github.com/DexinJ' target="_blank"><FontAwesomeIcon icon={faGithub} size="xl"/></a>
