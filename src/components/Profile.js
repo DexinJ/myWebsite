@@ -6,7 +6,7 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import {faGithub} from '@fortawesome/free-brands-svg-icons';
 import {faArrowLeft} from '@fortawesome/free-solid-svg-icons';
-import PDF from'../pages/Tony_Jin_Resume.pdf';
+import PDF from'../pages/TonyJinResume.pdf';
 import { Link } from 'react-router-dom';
 
 function Profile() {
