@@ -10,13 +10,13 @@ import PDF from'../pages/Tony_Jin_Resume.pdf';
 import { Link } from 'react-router-dom';
 
 function Profile() {
-    const name = <span style={{color : '#efecca'}}>Tony Jin</span>
+    const name = <span style={{color : '#ffffff'}}>Tony Jin</span>
     return(
     <div className='container'>
       <img src={photo} style={{ borderRadius: '50%', display: "block" }} className="photo" alt="photo" />
       <div className='bmarg'>
         <p style={{ color : '#7F7F7F'}}>
-          Hello, I am {name}<br/>I am a software engineer specialized in <span style={{color : '#efecca'}}>Python, C++, Java, and React.js</span>
+          Hello, I am {name}<br/>I am a software engineer specialized in <span style={{color : '#ffffff'}}>Python, C++, Java, and React.js</span>
         </p>
       </div>
       <div className='bmarg'>
