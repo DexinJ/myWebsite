@@ -13,7 +13,9 @@ function Profile() {
     const name = <span style={{color : '#ffffff'}}>Tony Jin</span>
     return(
     <div className='container'>
+      <div className='bmarg htmarg'>
       <img src={photo} style={{ borderRadius: '50%', display: "block" }} className="photo" alt="photo" />
+      </div>
       <div className='bmarg'>
         <p style={{ color : '#7F7F7F'}}>
           Hello, I am {name}<br/>I am a software engineer specialized in <span style={{color : '#ffffff'}}>Python, C++, Java, and React.js</span>

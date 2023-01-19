@@ -12,6 +12,8 @@
   align-items: center;
   justify-content: center;
   padding-bottom: 2.5rem;
+  max-width: 98%;
+  margin: auto;
 }
 .bmarg{
   margin-bottom: 40px;

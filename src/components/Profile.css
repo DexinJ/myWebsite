@@ -1,11 +1,9 @@
-.photo {
-    height: auto;
-    max-width: 180px; 
-    margin-top: 1cm;
-    margin: auto;
-    width: 20%;
-}
 
+.photo {
+  height: auto;
+  max-width: 180px; 
+  margin:auto;
+}
 .ico {
     padding: 5px;
     margin: auto;
@@ -18,12 +16,18 @@
   }
  
 
+  .htmarg{
+    margin-top: 20px;
+  }
+
   .container {
     height: 100%;
     width: 100%;
     justify-content: center;
     align-items: center;
     padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 40px;
   }
 
   .link{
