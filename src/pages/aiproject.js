@@ -15,13 +15,12 @@ const AIproject = () => {
         <Subheader/>
         <div className="Page-body">
           <h1 className="tmarg bmarg">
-            <p>AI Class projects</p>
+            <p>AI Projects</p>
           </h1>
-            
-              <div className="textfold bmarg"> 
-              <div className="smallimage">
+          <div className="smallimage">
               <img src={im1} className = "demoImage"/>
-              </div>
+          </div>
+              <div className="twintext bmarg"> 
               <div>
                 <div className="bmarg">
                   <p style={{ fontWeight: 'bold' }}>Timespan</p>
@@ -36,7 +35,7 @@ const AIproject = () => {
                   </p>
                 </div>
               </div> 
-              </div>
+              
               <div className="bmarg">
                 <div className="bmarg">
                   <p style={{ fontWeight: 'bold' }}>Goal</p>
@@ -47,6 +46,7 @@ const AIproject = () => {
                 I also use it to create different types of AI agents like knowledge-based agents and reactive agents.                
                 </p>
                 <p>At the end of the term, we pitted AIs against each other in a Pacman tournament to experience AIs in a competitive environment.</p>
+              </div>
               </div>
                <div className="caption bmarg">
               <img src={im2} className = "demoImage"/>
