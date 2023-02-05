@@ -5,14 +5,15 @@
   margin:auto;
 }
 .ico {
-    padding: 5px;
     margin: auto;
     margin-top: 5px;
     color:white;
   }
 
   .icodiv {
-    padding-bottom: 10px;
+    display: flex;
+    margin-bottom: 10px;
+    justify-content: center;
   }
  
 
@@ -34,7 +35,6 @@
     color: white;
     text-decoration: none;
   }
-
   .botton{
     padding-top: 12px;
     padding-bottom: 12px;
@@ -43,5 +43,12 @@
     border-style: solid;
     border-radius: 50px;
     border-width: thin;
+  }
+  @media only screen and (min-width:426px) { 
+  .ico{
+    margin: 15px;
+  }
+  .botton{
     font-size: 24px;
   }
+}

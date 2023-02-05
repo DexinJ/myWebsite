@@ -18,16 +18,16 @@ function Profile() {
       </div>
       <div className='bmarg'>
         <p style={{ color : '#7F7F7F'}}>
-          Hello, I am {name}<br/>I am a software engineer specialized in <span style={{color : '#ffffff'}}>Python, C++, Java, and React.js</span>
+          Hello, I am {name}<br/>I am a software engineer specializing in <span style={{color : '#ffffff'}}>Python, C++, Java, and React.js</span>
         </p>
       </div>
       <div className='bmarg'>
       <p><a title="Resume" href = {PDF} className='link botton' target="_blank">View Resume</a></p>
       </div>
         <div className='icodiv'>
-        <a className='ico' title="Linkedin" href='https://www.linkedin.com/in/dexin-jin/' target="_blank"><FontAwesomeIcon icon={faLinkedin} size="xl"/></a>
-        <a className='ico' title="Github" href='https://github.com/DexinJ' target="_blank"><FontAwesomeIcon icon={faGithub} size="xl"/></a>
-        <a className='ico' title="Email" href='mailto:jindexin6@gmail.com'><FontAwesomeIcon icon={faEnvelope} size="xl"/></a>
+        <a className='ico' title="Linkedin" href='https://www.linkedin.com/in/dexin-jin/' target="_blank"><FontAwesomeIcon icon={faLinkedin} size="2xl"/></a>
+        <a className='ico' title="Github" href='https://github.com/DexinJ' target="_blank"><FontAwesomeIcon icon={faGithub} size="2xl"/></a>
+        <a className='ico' title="Email" href='mailto:jindexin6@gmail.com'><FontAwesomeIcon icon={faEnvelope} size="2xl"/></a>
         </div>
     </div>
 
