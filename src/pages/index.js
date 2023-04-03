@@ -26,7 +26,7 @@ const Home = () => {
               <Project cover = {p1} content = {data.p1} link = "/rage"/>
               <Project cover = {p2} content = {data.p2}link = "/AI"/>
               <Project cover = {p3} content = {data.p3}link = "/web"/>
-              <Project cover = {p4} content = {data.p4}link = "/fileread"/>
+              {/* <Project cover = {p4} content = {data.p4}link = "/fileread"/> */}
         </div>
         <footer className='App-footer'></footer>
     </div> 

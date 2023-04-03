@@ -19,7 +19,7 @@ function App() {
             <Route path='/rage' element={<Rage/>} />
             <Route path='/AI' element={<AIproject/>} />
             <Route path='/web' element={<WebProject/>} />
-            <Route path='/fileread' element={<FSileread/>} />
+            {/* <Route path='/fileread' element={<FSileread/>} /> */}
           </Routes>
         </Router>
     );
