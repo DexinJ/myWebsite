@@ -1,11 +1,10 @@
-
 .Page-footer {
   background-color: #000c42;
   min-height: 1rem;
   position: absolute;
-  left:0;
-  bottom:0;
-  right:0;
+  left: 0;
+  bottom: 0;
+  right: 0;
   width: 100%;
 }
 
@@ -17,85 +16,84 @@
   justify-content: center;
 }
 
-.Page-body{
+.Page-body {
   margin: auto;
-  max-width: 95%;
-  padding-top: 40px;
-  padding-bottom: 56px;
+  max-width: 100%;
+
+  padding-bottom: 24px;
 }
 
-.Page-text{
+.Page-text {
   font-size: calc(4px + 2vmin);
 }
 
-.spacer{
+.spacer {
   margin-bottom: 20px;
 }
 
-.demoImage{
+.demoImage {
   max-width: 100%;
   height: auto;
 }
 
-.Parallel-text{
+.Parallel-text {
   margin-right: 20%;
 }
 
-.caption{
-  color:rgb(80, 80, 80);
+.caption {
+  color: rgb(80, 80, 80);
   text-align: center;
   font-style: italic;
 }
 
-@media only screen and (min-width:768px) {
+.case__study {
+  max-width: 1440px;
+  margin: auto;
+
+  padding: 40px;
+}
+
+@media only screen and (min-width: 768px) {
   .Page-footer {
     background-color: #000c42;
     min-height: 1rem;
     position: absolute;
-    left:0;
-    bottom:0;
-    right:0;
+    left: 0;
+    bottom: 0;
+    right: 0;
     width: 100%;
   }
-  .box{
+  .box {
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     /*background-color: #8b93ff;*/
   }
-  .batext{
+  .batext {
     position: absolute;
     bottom: 0;
   }
   .Page {
-    text-align: left;
-    background-color: #e7e7e7;
-    min-height: 100vh;
-    position: relative;
     font-size: calc(10px + 1vmin);
   }
-  .Page-body{
-    width:760px;
-    /*background-color: #ff2222;*/
-  }
-  .twintext{
+  .twintext {
     display: grid;
     grid-template-columns: 1.1fr 4fr;
     gap: 10px;
   }
-  .twintexttwo{
+  .twintexttwo {
     display: grid;
     grid-template-columns: 4fr 2fr;
     gap: 10px;
   }
-  .twintext5050{
+  .twintext5050 {
     display: grid;
     grid-template-columns: 1fr 1.8fr;
     gap: 10px;
     /*background-color: #e7e7e7;*/
   }
-  .twincaption{
+  .twincaption {
     font-size: calc(5px + 1vmin);
   }
 }
