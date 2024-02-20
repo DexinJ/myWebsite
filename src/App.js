@@ -9,6 +9,8 @@ import Main from "./components/Main/Main";
 import Subheader from "./components/SubHeader/subHeader";
 import { Switch, Route } from "react-router-dom/cjs/react-router-dom";
 import TripleTen from "./components/TripleTen/TripleTen";
+import WhatToWear from "./components/WhatToWear/WhatToWear";
+import RecipeSearcher from "./components/RecipeSearcher/RecipeSearcher";
 
 function App() {
   useEffect(() => {
@@ -36,6 +38,12 @@ function App() {
           </Route>
           <Route path="/tripleten">
             <TripleTen />
+          </Route>
+          <Route path="/wtwr">
+            <WhatToWear />
+          </Route>
+          <Route path="/recipe-searcher">
+            <RecipeSearcher />
           </Route>
         </Switch>
       </div>

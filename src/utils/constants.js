@@ -36,6 +36,20 @@ const images = {
     demo4: "/images/TripleTen/tripleten5.png",
     demo5: "/images/TripleTen/tripleten6.png",
   },
+  wtwr: {
+    demo1: "/images/WTWR/wtwr1.png",
+    demo2: "/images/WTWR/wtwr2.png",
+    cover: "/images/WTWR/wtwr1.png",
+    demo3: "/images/WTWR/wtwr3.png",
+    demo4: "/images/WTWR/wtwr4.png",
+  },
+  RecipeSearcher: {
+    demo1: "/images/RecipeSearcher/RecipeSearcher2.png",
+    demo2: "/images/RecipeSearcher/RecipeSearcher1.png",
+    cover: "/images/RecipeSearcher/RecipeSearcher2.png",
+    demo3: "/images/RecipeSearcher/RecipeSearcher3.png",
+    demo4: "/images/RecipeSearcher/RecipeSearcher4.png",
+  },
 };
 
 const data = {
@@ -53,6 +67,8 @@ const data = {
   p3: { title: "Web design projects", date: " ", content: " " },
   p4: { title: "Fileread Projects", date: " ", content: " " },
   p5: { title: "TripleTen Projects", date: " ", content: " " },
+  p6: { title: "What to Wear", date: " ", content: " " },
+  p7: { title: "What's In My Fridge", date: " ", content: " " },
 };
 
 export { images, data };

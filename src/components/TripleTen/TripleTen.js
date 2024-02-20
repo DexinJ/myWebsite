@@ -19,7 +19,7 @@ const TripleTen = () => {
           <div>
             <p style={{ fontWeight: "bold" }}>Timespan</p>
 
-            <p>ongoing</p>
+            <p>10 weeks</p>
           </div>
         </div>
         <div>
