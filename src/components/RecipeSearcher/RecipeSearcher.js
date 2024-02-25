@@ -29,7 +29,7 @@ const RecipeSearcher = () => {
             <p style={{ fontWeight: "bold" }}>Goal</p>
             <p>
               Design and create a website that searches aviliable recipes using
-              a list of indigrients.
+              a list of ingredients.
             </p>
           </div>
           <div className="wtwr__flex">
@@ -41,7 +41,7 @@ const RecipeSearcher = () => {
               implemented it myself.
             </p>
             <p>
-              This website searches recipes using a list of indigrients via the
+              This website searches recipes using a list of ingredients via the
               Spoontacular API. Users can view the recipe with links to the
               oprgin site and the Spoontacular site. A user can also save
               recipes that they like and view them in their collection.
