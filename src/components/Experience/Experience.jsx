@@ -7,17 +7,12 @@ import ExperienceItem from "./ExperienceItem";
 
 const experienceData = [
   {
-    company: "Apple",
+    company: "a",
     position: "Front-end Developer",
     location: "California, United States",
-    period: "Nov 2020 - Present · Full-time",
+    period: "a",
     tags: ["Swift", "Go"],
-    responsibilities: [
-      "Improving overall website performance for mobile users.",
-      "Collaborate with back-end developers and web designers to improve usability",
-      "Add voice search feature for mobile app.",
-      "Developing an admin panel to manage contents, users, products and ...",
-    ],
+    responsibilities: [""],
   },
 ];
 

@@ -4,6 +4,7 @@
   gap: 40px 56px;
   color: var(--Cinder, #232e35);
   font: 400 16px Inter, sans-serif;
+  width: 100%;
 }
 
 .navLink {

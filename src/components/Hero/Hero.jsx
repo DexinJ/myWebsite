@@ -22,11 +22,6 @@ const Hero = () => {
           className={styles.socialIcons}
         />
       </div>
-      <img
-        src="https://cdn.builder.io/api/v1/image/assets/TEMP/ef7df4c5521478cafc0c2485d36fd6082f1a64275171c49398eccf41a852a096?placeholderIfAbsent=true&apiKey=f68351809d1b498a88d39fd40ad3ba29"
-        alt="Tony Jin"
-        className={styles.heroImage}
-      />
     </section>
   );
 };
