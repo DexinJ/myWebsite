@@ -20,7 +20,7 @@ const servicesData = [
   },
   {
     icon: "https://cdn.builder.io/api/v1/image/assets/TEMP/81c6301e61254b44b4e7624e9bcb647998a1b302e5f565584aae356fe5301db9?placeholderIfAbsent=true&apiKey=f68351809d1b498a88d39fd40ad3ba29",
-    title: "Web Development",
+    title: "Data",
     description:
       "Create and maintain your websites and also take care of its performance and traffic capacity.",
   },

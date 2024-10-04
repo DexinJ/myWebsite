@@ -20,7 +20,6 @@ const Home = () => {
       <Portfolio />
       <Experience />
       <Education />
-      <Skills />
       <ContactForm />
     </Layout>
   );

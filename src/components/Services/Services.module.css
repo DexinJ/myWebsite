@@ -4,13 +4,12 @@
 .services {
   background: var(--Light-1, #fbfbfb);
   width: 100%;
-  padding: 115px 80px 184px;
+  padding: 115px 0 184px;
 }
 
 .container {
   display: flex;
   width: 100%;
-  max-width: 1195px;
   flex-direction: column;
   align-items: center;
 }
@@ -45,8 +44,10 @@
   display: flex;
   margin-top: 104px;
   align-items: center;
-  gap: 40px 56px;
+  row-gap: 40px;
+  justify-content: space-around;
   flex-wrap: wrap;
+  width: 100%;
 }
 
 @media (max-width: 991px) {

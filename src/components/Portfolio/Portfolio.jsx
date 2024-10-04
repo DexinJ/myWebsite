@@ -4,6 +4,9 @@
 import React from "react";
 import styles from "./Portfolio.module.css";
 import PortfolioItem from "./PortfolioItem";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const portfolioData = [
   {
@@ -24,25 +27,55 @@ const portfolioData = [
     image:
       "https://cdn.builder.io/api/v1/image/assets/TEMP/dd2091c14ab2e8f79777f01bc51f84fd01c6eb3a92f235c48db99fbf48faab87?placeholderIfAbsent=true&apiKey=f68351809d1b498a88d39fd40ad3ba29",
   },
+  {
+    title: "Support Center Website.",
+    tag: "PHP",
+    image:
+      "https://cdn.builder.io/api/v1/image/assets/TEMP/dd2091c14ab2e8f79777f01bc51f84fd01c6eb3a92f235c48db99fbf48faab87?placeholderIfAbsent=true&apiKey=f68351809d1b498a88d39fd40ad3ba29",
+  },
+  {
+    title: "Support Center Website.",
+    tag: "PHP",
+    image:
+      "https://cdn.builder.io/api/v1/image/assets/TEMP/dd2091c14ab2e8f79777f01bc51f84fd01c6eb3a92f235c48db99fbf48faab87?placeholderIfAbsent=true&apiKey=f68351809d1b498a88d39fd40ad3ba29",
+  },
+  {
+    title: "Support Center Website.",
+    tag: "PHP",
+    image:
+      "https://cdn.builder.io/api/v1/image/assets/TEMP/dd2091c14ab2e8f79777f01bc51f84fd01c6eb3a92f235c48db99fbf48faab87?placeholderIfAbsent=true&apiKey=f68351809d1b498a88d39fd40ad3ba29",
+  },
 ];
 
 const Portfolio = () => {
+  const settings = {
+    dots: true,
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+  };
   return (
     <section className={styles.portfolio}>
       <div className={styles.header}>
         <div className={styles.aboveTitleLine} />
         <p className={styles.aboveTitle}>MY WORKS</p>
       </div>
-      <h2 className={styles.title}>Featured Portfolios</h2>
-      <img
-        src="https://cdn.builder.io/api/v1/image/assets/TEMP/e22a00fee804dd845071199364a336fa5ab6a1be774988126d1fa8334168022f?placeholderIfAbsent=true&apiKey=f68351809d1b498a88d39fd40ad3ba29"
-        alt=""
-        className={styles.decorativeImage}
-      />
-      <div className={styles.items}>
-        {portfolioData.map((item, index) => (
-          <PortfolioItem key={index} {...item} />
-        ))}
+      <div className={styles.content}>
+        <h2 className={styles.title}>Featured Portfolios</h2>
+        <div className={styles.buttons}>
+          <img
+            src="https://cdn.builder.io/api/v1/image/assets/TEMP/e22a00fee804dd845071199364a336fa5ab6a1be774988126d1fa8334168022f?placeholderIfAbsent=true&apiKey=f68351809d1b498a88d39fd40ad3ba29"
+            alt=""
+            className={styles.decorativeImage}
+          />
+        </div>
+        <div className={styles.items}>
+          <Slider {...settings}>
+            {portfolioData.map((item, index) => (
+              <PortfolioItem key={index} {...item} />
+            ))}
+          </Slider>
+        </div>
       </div>
     </section>
   );

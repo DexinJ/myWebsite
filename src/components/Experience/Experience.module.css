@@ -4,13 +4,12 @@
 .experience {
   background: var(--Light-1, #fbfbfb);
   width: 100%;
-  padding: 109px 70px;
+  padding: 109px 0;
 }
 
 .container {
   display: flex;
   width: 100%;
-  max-width: 1204px;
   gap: 20px;
 }
 

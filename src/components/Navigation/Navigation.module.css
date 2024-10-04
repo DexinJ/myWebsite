@@ -1,10 +1,10 @@
 .navigation {
   display: flex;
   align-items: center;
-  gap: 40px 56px;
+  width: auto;
+  gap: 40px;
   color: var(--Cinder, #232e35);
   font: 400 16px Inter, sans-serif;
-  width: 100%;
 }
 
 .navLink {
@@ -24,7 +24,6 @@
 
 @media (max-width: 991px) {
   .navigation {
-    max-width: 100%;
     flex-wrap: wrap;
   }
 }

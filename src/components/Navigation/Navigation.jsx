@@ -16,14 +16,12 @@ const Navigation = () => {
       <a href="#experience" className={styles.navLink}>
         Experience
       </a>
-      <a href="#blog" className={styles.navLink}>
-        Blog
+      <a href="#education" className={styles.navLink}>
+        Education
       </a>
-      <img
-        src="https://cdn.builder.io/api/v1/image/assets/TEMP/87e3a7a588406bd0740424439e34014ba0f1e28b3f1609631e4ef3092894bccd?placeholderIfAbsent=true&apiKey=f68351809d1b498a88d39fd40ad3ba29"
-        alt=""
-        className={styles.navIcon}
-      />
+      <a href="#contacts" className={styles.navLink}>
+        Contacts
+      </a>
     </nav>
   );
 };
