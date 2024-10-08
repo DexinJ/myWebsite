@@ -38,7 +38,7 @@ const Footer = () => {
         </a>
       </div>
       <p className={styles.copyright}>
-        © 2022 - Dev<span className={styles.highlight}>Chapter</span>
+        © 2024 - TOny<span className={styles.highlight}>Jin</span>
       </p>
     </footer>
   );

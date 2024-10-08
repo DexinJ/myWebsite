@@ -4,26 +4,53 @@
 import React from "react";
 import styles from "./Navigation.module.css";
 
-const Navigation = () => {
+const Navigation = ({ onItemClick, scrollToSection }) => {
+  const handleClick = (sectionId) => {
+    if (typeof scrollToSection === "function") {
+      scrollToSection(sectionId);
+      onItemClick();
+    } else {
+      console.error("scrollToSection is not a function");
+    }
+  };
+
   return (
     <nav className={styles.navigation}>
-      <a href="#services" className={styles.navLink}>
-        Services
-      </a>
-      <a href="#portfolios" className={styles.navLink}>
-        Portfolios
-      </a>
-      <a href="#experience" className={styles.navLink}>
+      <button className={styles.navButton} onClick={() => handleClick("hero")}>
+        Home
+      </button>
+      <button
+        className={styles.navButton}
+        onClick={() => handleClick("services")}
+      >
+        About
+      </button>
+      <button
+        className={styles.navButton}
+        onClick={() => handleClick("portfolio")}
+      >
+        Projects
+      </button>
+      <button
+        className={styles.navButton}
+        onClick={() => handleClick("experience")}
+      >
         Experience
-      </a>
-      <a href="#education" className={styles.navLink}>
+      </button>
+      <button
+        className={styles.navButton}
+        onClick={() => handleClick("education")}
+      >
         Education
-      </a>
-      <a href="#contacts" className={styles.navLink}>
-        Contacts
-      </a>
+      </button>
+      <button
+        className={styles.navButton}
+        onClick={() => handleClick("contact")}
+      >
+        Contact
+      </button>
     </nav>
   );
 };
 
-export default Navigation;
+export default React.memo(Navigation);

@@ -1,13 +1,17 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import styles from "./Header.module.css";
 import Logo from "../Logo/Logo";
 import Navigation from "../Navigation/Navigation";
 import ThemeToggle from "../ThemeToggle/ThemeToggle";
 import Button from "../Button/Button";
 
-const Header = () => {
+const Header = ({ scrollToSection }) => {
   const [prevScrollPos, setPrevScrollPos] = useState(window.scrollY);
   const [headerVisible, setHeaderVisible] = useState(true);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 1000);
+
+  const menuRef = useRef(null);
 
   useEffect(() => {
     const headerDiv = document.querySelector("header");
@@ -15,24 +19,61 @@ const Header = () => {
 
     const handleScroll = () => {
       const currentScrollPos = window.scrollY;
-      console.log(
-        prevScrollPos > currentScrollPos || currentScrollPos < headerBottom
-      );
-      if (prevScrollPos > currentScrollPos || currentScrollPos < headerBottom) {
-        setHeaderVisible(true); // Show header
-      } else {
-        setHeaderVisible(false); // Hide header
+      if (!isMenuOpen) {
+        if (
+          prevScrollPos > currentScrollPos ||
+          currentScrollPos < headerBottom
+        ) {
+          setHeaderVisible(true); // Show header
+        } else {
+          setHeaderVisible(false); // Hide header
+        }
       }
-
       setPrevScrollPos(currentScrollPos); // Update the previous scroll position
     };
 
     window.addEventListener("scroll", handleScroll);
 
-    return () => {
-      window.removeEventListener("scroll", handleScroll); // Clean up event listener on component unmount
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 1000);
     };
-  }, [prevScrollPos]);
+
+    window.addEventListener("resize", handleResize);
+
+    const handleClickOutside = (event) => {
+      if (
+        menuRef.current &&
+        !menuRef.current.contains(event.target) &&
+        !event.target.classList.contains(styles.menuButton)
+      ) {
+        closeMenu();
+      }
+    };
+
+    if (isMenuOpen) {
+      document.addEventListener("mousedown", handleClickOutside);
+    }
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("resize", handleResize);
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [prevScrollPos, isMenuOpen]);
+
+  const toggleMenu = () => {
+    setIsMenuOpen((prev) => !prev);
+    setHeaderVisible(true); // Ensure header is visible when menu is toggled
+  };
+
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
+
+  const handleMenuItemClick = () => {
+    closeMenu();
+    // Add any additional logic for menu item clicks
+  };
 
   return (
     <header
@@ -40,11 +81,47 @@ const Header = () => {
     >
       <div className={styles.contents}>
         <Logo />
-        <Navigation />
-        <div className={styles.rightContent}>
-          <ThemeToggle />
-          <Button className={styles.resumeButton}>Resume</Button>
-        </div>
+        {isMobile ? (
+          <>
+            <Button
+              className={`${styles.menuButton} ${
+                isMenuOpen ? styles.open : ""
+              }`}
+              onClick={toggleMenu}
+            >
+              Menu
+            </Button>
+            <div
+              className={`${styles.mobileMenu} ${
+                isMenuOpen ? styles.open : ""
+              }`}
+              ref={menuRef}
+            >
+              <ThemeToggle />
+              <Navigation
+                onItemClick={handleMenuItemClick}
+                scrollToSection={scrollToSection}
+              />
+              <Button
+                className={styles.resumeButton}
+                onClick={handleMenuItemClick}
+              >
+                Resume
+              </Button>
+            </div>
+          </>
+        ) : (
+          <>
+            <Navigation
+              onItemClick={handleMenuItemClick}
+              scrollToSection={scrollToSection}
+            />
+            <div className={styles.rightContent}>
+              <ThemeToggle />
+              <Button className={styles.resumeButton}>Resume</Button>
+            </div>
+          </>
+        )}
       </div>
     </header>
   );

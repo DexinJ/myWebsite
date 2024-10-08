@@ -37,6 +37,33 @@
   font: 500 14px Inter, sans-serif;
 }
 
+.menuButton {
+  display: none;
+}
+
+.mobileMenu {
+  display: none;
+}
+
+.mobileMenu > * {
+  margin-bottom: 1rem;
+}
+
+.mobileMenu button {
+  width: 100%;
+  text-align: left;
+  padding: 0.5rem 1rem;
+  background: none;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.mobileMenu button:hover {
+  background-color: #f0f0f0; /* Adjust as needed */
+}
+
 @media (max-width: 991px) {
   .header {
     max-width: 100%;
@@ -45,5 +72,28 @@
 
   .resumeButton {
     padding: 16px 20px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .menuButton {
+    display: block;
+  }
+  .mobileMenu {
+    position: fixed;
+    top: 0;
+    right: -100%; /* Start off-screen */
+    width: 300px; /* Adjust as needed */
+    background-color: #fff; /* Adjust as needed */
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+    transition: right 0.2s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 1rem;
+    z-index: 1000;
+    height: 100vh;
+  }
+  .mobileMenu.open {
+    right: 0;
   }
 }
