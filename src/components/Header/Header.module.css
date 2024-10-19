@@ -5,7 +5,8 @@
   width: 100vw;
   position: fixed;
   top: 0;
-  background-color: #ffffff;
+  background-color: var(--bg-color);
+  color: var(--text-color);
   transition: top 0.3s; /* Smooth transition for hiding and showing */
   z-index: 1000;
 }
@@ -32,7 +33,8 @@
 .resumeButton {
   border-radius: 8px;
   border: 1px solid var(--Light-2, #f1f1f1);
-  color: var(--Cinder, #232e35);
+  background-color: var(--primary-color);
+  color: var(--White);
   padding: 16px 24px;
   font: 500 14px Inter, sans-serif;
 }
@@ -41,8 +43,13 @@
   display: none;
 }
 
+.menuIcon {
+  width: 24px;
+}
+
 .mobileMenu {
   display: none;
+  background-color: var(--Light-1);
 }
 
 .mobileMenu > * {
@@ -78,13 +85,14 @@
 @media (max-width: 1000px) {
   .menuButton {
     display: block;
+
+    padding: 5px;
   }
   .mobileMenu {
     position: fixed;
     top: 0;
     right: -100%; /* Start off-screen */
     width: 300px; /* Adjust as needed */
-    background-color: #fff; /* Adjust as needed */
     box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
     transition: right 0.2s ease-in-out;
     display: flex;

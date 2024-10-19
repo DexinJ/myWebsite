@@ -23,7 +23,7 @@ const Navigation = ({ onItemClick, scrollToSection }) => {
         className={styles.navButton}
         onClick={() => handleClick("services")}
       >
-        About
+        Services
       </button>
       <button
         className={styles.navButton}

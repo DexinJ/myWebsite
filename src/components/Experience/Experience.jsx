@@ -7,12 +7,15 @@ import ExperienceItem from "./ExperienceItem";
 
 const experienceData = [
   {
-    company: "a",
-    position: "Front-end Developer",
-    location: "California, United States",
-    period: "a",
-    tags: ["Swift", "Go"],
-    responsibilities: [""],
+    company: "Slopedia",
+    position: "Full-stack Developer",
+    location: "Remote, USA",
+    period: "Jan 2024 - Mar 2024",
+    tags: ["React.js", "SQL"],
+    responsibilities: [
+      "Conducted code reviews via GitHub pull requests, ensuring code quality and adherence to best practices.",
+      "Created responsive front-end solutions using React.js and Tailwind CSS, and actively participated in team meetings.",
+    ],
   },
 ];
 
@@ -28,16 +31,17 @@ const Experience = () => {
           <h2 className={styles.title}>Work Experiences</h2>
           <div className={styles.companyList}>
             <button className={styles.companyButton}>
-              Apple
+              Slopedia
               <img
                 src="https://cdn.builder.io/api/v1/image/assets/TEMP/cca51eb5c9fbc81de644342e432b34aca3567585850ba65854afcd26eca24d9d?placeholderIfAbsent=true&apiKey=f68351809d1b498a88d39fd40ad3ba29"
                 alt=""
                 className={styles.companyIcon}
               />
             </button>
-            <button className={styles.companyButton}>Microsoft</button>
-            <button className={styles.companyButton}>Facebook</button>
-            <button className={styles.companyButton}>Slack</button>
+            <button className={styles.companyButton}>Fileread AI</button>
+            <button className={styles.companyButton}>
+              Jisan Research Institute
+            </button>
           </div>
         </div>
         <div className={styles.content}>

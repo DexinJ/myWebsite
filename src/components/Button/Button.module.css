@@ -8,11 +8,9 @@
   color: var(--Cinder, #232e35);
   font: 500 14px Inter, sans-serif;
   cursor: pointer;
-  padding: 16px 24px;
 }
 
 @media (max-width: 991px) {
   .button {
-    padding: 16px 20px;
   }
 }

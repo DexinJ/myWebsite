@@ -5,6 +5,8 @@
   flex-wrap: wrap;
   justify-content: space-between;
   height: 100vh;
+  background-color: var(--bg-color);
+  color: var(--text-color);
 }
 
 .content {
@@ -28,7 +30,7 @@
 }
 
 .highlight {
-  color: var(--Purple, #7e74f1);
+  color: var(--primary-color);
 }
 
 .description {

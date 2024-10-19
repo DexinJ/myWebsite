@@ -7,22 +7,22 @@ import ServiceItem from "./ServiceItem";
 
 const servicesData = [
   {
-    icon: "https://cdn.builder.io/api/v1/image/assets/TEMP/cc2ca46fa91fa2ba4639a08d7c2adb7c3c274f1caedf6c7f7f92023c9088e381?placeholderIfAbsent=true&apiKey=f68351809d1b498a88d39fd40ad3ba29",
+    icon: "/images/icons/layer-svgrepo-com.svg",
     title: "Application Development",
     description:
       "Standard designing, building, and implementing your applications with documentation.",
   },
   {
-    icon: "https://cdn.builder.io/api/v1/image/assets/TEMP/81c6301e61254b44b4e7624e9bcb647998a1b302e5f565584aae356fe5301db9?placeholderIfAbsent=true&apiKey=f68351809d1b498a88d39fd40ad3ba29",
+    icon: "/images/icons/globe-svgrepo-com.svg",
     title: "Web Development",
     description:
       "Create and maintain your websites and also take care of its performance and traffic capacity.",
   },
   {
-    icon: "https://cdn.builder.io/api/v1/image/assets/TEMP/81c6301e61254b44b4e7624e9bcb647998a1b302e5f565584aae356fe5301db9?placeholderIfAbsent=true&apiKey=f68351809d1b498a88d39fd40ad3ba29",
+    icon: "/images/icons/bar-chart-5-svgrepo-com.svg",
     title: "Data",
     description:
-      "Create and maintain your websites and also take care of its performance and traffic capacity.",
+      "Analyze, interpret, and visualize your datasets while ensuring accuracy and scalability of the insights generated.",
   },
 ];
 

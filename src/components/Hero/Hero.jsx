@@ -3,18 +3,21 @@
  */
 import React from "react";
 import styles from "./Hero.module.css";
+import { useTheme } from "../../utils/ThemeContext";
 
 const Hero = () => {
+  const { isDarkMode } = useTheme();
+
   return (
-    <section className={styles.hero}>
+    <section className={`${styles.hero} ${isDarkMode ? styles.darkMode : ""}`}>
       <div className={styles.content}>
         <p className={styles.aboveTitle}>HI, I'M</p>
         <h1 className={styles.name}>
           Tony <span className={styles.highlight}>Jin.</span>
         </h1>
         <p className={styles.description}>
-          Creative front-end developer with more than +5 years of experience in
-          enterprise companies and startups.
+          I am a full-stack engineer focused on building creative and
+          user-friendly software experiences.
         </p>
         <img
           src="https://cdn.builder.io/api/v1/image/assets/TEMP/4dd541e2dee0e5b559459112e1e52714c906125850e7dc3236877b7ddfbdcd1c?placeholderIfAbsent=true&apiKey=f68351809d1b498a88d39fd40ad3ba29"

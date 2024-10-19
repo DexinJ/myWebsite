@@ -8,28 +8,7 @@ const Footer = () => {
   return (
     <footer className={styles.footer}>
       <div className={styles.socialMedia}>
-        <a href="#" aria-label="Facebook">
-          <img
-            src="https://cdn.builder.io/api/v1/image/assets/TEMP/c943535c90d9ad0b8ec19f53c331517dc0771b48779222d1b7f63f7209e0af18?placeholderIfAbsent=true&apiKey=f68351809d1b498a88d39fd40ad3ba29"
-            alt=""
-            className={styles.socialIcon}
-          />
-        </a>
-        <a href="#" aria-label="Twitter">
-          <img
-            src="https://cdn.builder.io/api/v1/image/assets/TEMP/d63aed431463f5d816231102649281c9dd41d2abd42a57d9871bcd20b5162c2e?placeholderIfAbsent=true&apiKey=f68351809d1b498a88d39fd40ad3ba29"
-            alt=""
-            className={styles.socialIcon}
-          />
-        </a>
-        <a href="#" aria-label="Instagram">
-          <img
-            src="https://cdn.builder.io/api/v1/image/assets/TEMP/91753928516eb0b88fcd65dcd0be79b4a9bd5800982ac0d44a5ac0b6a79c9aa5?placeholderIfAbsent=true&apiKey=f68351809d1b498a88d39fd40ad3ba29"
-            alt=""
-            className={styles.socialIcon}
-          />
-        </a>
-        <a href="#" aria-label="LinkedIn">
+        <a href="https://www.linkedin.com/in/dexin-jin/" aria-label="LinkedIn">
           <img
             src="https://cdn.builder.io/api/v1/image/assets/TEMP/54c90fe26f3f9faad3ceebe410473315dd116124ba3b9191681d49a691189cd8?placeholderIfAbsent=true&apiKey=f68351809d1b498a88d39fd40ad3ba29"
             alt=""

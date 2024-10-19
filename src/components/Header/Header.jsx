@@ -4,8 +4,10 @@ import Logo from "../Logo/Logo";
 import Navigation from "../Navigation/Navigation";
 import ThemeToggle from "../ThemeToggle/ThemeToggle";
 import Button from "../Button/Button";
+import { useTheme } from "../../utils/ThemeContext";
 
 const Header = ({ scrollToSection }) => {
+  const { isDarkMode } = useTheme();
   const [prevScrollPos, setPrevScrollPos] = useState(window.scrollY);
   const [headerVisible, setHeaderVisible] = useState(true);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -77,19 +79,24 @@ const Header = ({ scrollToSection }) => {
 
   return (
     <header
-      className={`${styles.header} ${!headerVisible ? styles.hidden : ""}`}
+      className={`${styles.header} ${!headerVisible ? styles.hidden : ""} ${
+        isDarkMode ? styles.darkMode : ""
+      }`}
     >
       <div className={styles.contents}>
         <Logo />
         {isMobile ? (
           <>
-            <Button
-              className={`${styles.menuButton} ${
-                isMenuOpen ? styles.open : ""
-              }`}
-              onClick={toggleMenu}
-            >
-              Menu
+            <Button className={styles.menuButton} onClick={toggleMenu}>
+              <img
+                src={
+                  isDarkMode
+                    ? "/images/icons/white-menu-svgrepo-com.svg"
+                    : "/images/icons/menu-svgrepo-com.svg"
+                }
+                alt="Menu"
+                className={styles.menuIcon}
+              />
             </Button>
             <div
               className={`${styles.mobileMenu} ${

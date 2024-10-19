@@ -7,19 +7,14 @@ import EducationItem from "./EducationItem";
 
 const educationData = [
   {
-    institution: "Kingston university",
-    degree: "Master's degree - Software Engineering",
-    period: "2019 - 2021",
+    institution: "TripleTen",
+    degree: "Fullstack Development specialization",
+    period: "2023 - 2024",
   },
   {
-    institution: "Kingston university",
-    degree: "Bachelor's degree - Computer Engineering",
-    period: "2015 - 2019",
-  },
-  {
-    institution: "Westminster School",
-    degree: "Diploma's degree - Mathematics",
-    period: "2013 - 2015",
+    institution: "UC Santa Cruz",
+    degree: "Bachelor's degree - Computer Science",
+    period: "2016 - 2022",
   },
 ];
 

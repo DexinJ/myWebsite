@@ -33,21 +33,6 @@ const ContactForm = () => {
         <div className={styles.infoItem}>
           <div className={styles.icon}>
             <img
-              src="https://cdn.builder.io/api/v1/image/assets/TEMP/33db8a2230e90d775c6794ece2ac479312b0c3ad0023f3c9787e625c4168a63a?placeholderIfAbsent=true&apiKey=f68351809d1b498a88d39fd40ad3ba29"
-              alt=""
-              className={styles.iconImage}
-            />
-          </div>
-          <div className={styles.infoContent}>
-            <h3 className={styles.infoTitle}>Address</h3>
-            <p className={styles.infoText}>
-              3424 Layman Avenue, Fayetteville, NC
-            </p>
-          </div>
-        </div>
-        <div className={styles.infoItem}>
-          <div className={styles.icon}>
-            <img
               src="https://cdn.builder.io/api/v1/image/assets/TEMP/3d2331fcd998aca355c1c6e0a7b26bd7cbe93c971edce00395788b9249d68482?placeholderIfAbsent=true&apiKey=f68351809d1b498a88d39fd40ad3ba29"
               alt=""
               className={styles.iconImage}
@@ -55,7 +40,7 @@ const ContactForm = () => {
           </div>
           <div className={styles.infoContent}>
             <h3 className={styles.infoTitle}>Phone</h3>
-            <p className={styles.infoText}>(501) 414-1541</p>
+            <p className={styles.infoText}>(818) 614-8868</p>
           </div>
         </div>
         <div className={styles.infoItem}>
@@ -68,7 +53,7 @@ const ContactForm = () => {
           </div>
           <div className={styles.infoContent}>
             <h3 className={styles.infoTitle}>E-Mail</h3>
-            <p className={styles.infoText}>devchapter@gmail.com</p>
+            <p className={styles.infoText}>jindexin6@gmail.com</p>
           </div>
         </div>
       </div>

@@ -3,21 +3,23 @@
  */
 .portfolio {
   display: flex;
-  margin-top: 113px;
   width: 100%;
   flex-direction: column;
-
+  background-color: var(--bg-color);
   align-items: center;
+  height: 100vh;
+  color: var(--text-color);
 }
 
 .header {
   display: flex;
   gap: 16px;
   align-items: center;
+  margin-top: 80px;
 }
 
 .aboveTitleLine {
-  background: var(--Light-4, #d9d9d9);
+  background-color: var(--primary-color);
   width: 16px;
   height: 2px;
 }
@@ -44,6 +46,9 @@
 }
 .buttons {
   align-self: flex-start;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
 }
 
 .decorativeImage {
@@ -57,6 +62,50 @@
   padding: 0;
   margin: 40px 0 0;
   width: 100%;
+}
+
+.slider {
+  gap: 40px;
+}
+
+.navButton {
+  background-color: var(--Light-3);
+  border: none;
+  color: #333;
+  font-size: 1.5rem;
+  font-style: bold;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+  border-radius: 20px;
+}
+
+.navButton:hover {
+  opacity: 0.6;
+}
+
+.navButtonLeft {
+  padding: 15px 20px 15px 25px;
+}
+
+.navButtonRight {
+  padding: 15px 25px 15px 20px;
+}
+
+.arrow {
+  border: solid #7e74f1;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 5px;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
 }
 
 @media (max-width: 991px) {

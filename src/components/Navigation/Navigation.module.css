@@ -8,7 +8,7 @@
 .navButton {
   background: none;
   border: none;
-  color: #333;
+  color: var(--text-color);
   font-size: 1rem;
   font-weight: 500;
   padding: 0.5rem 1rem;
