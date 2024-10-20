@@ -20,9 +20,9 @@ const servicesData = [
   },
   {
     icon: "/images/icons/bar-chart-5-svgrepo-com.svg",
-    title: "Data",
+    title: "AI & Data Analytics",
     description:
-      "Analyze, interpret, and visualize your datasets while ensuring accuracy and scalability of the insights generated.",
+      "AI-powered analysis, interpretation, and visualization of datasets with accuracy and scalability.",
   },
 ];
 

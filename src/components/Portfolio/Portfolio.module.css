@@ -6,9 +6,11 @@
   width: 100%;
   flex-direction: column;
   background-color: var(--bg-color);
-  align-items: center;
-  height: 100vh;
+  align-items: left;
   color: var(--text-color);
+  padding: 80px 20px 200px;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
 .header {
@@ -16,6 +18,7 @@
   gap: 16px;
   align-items: center;
   margin-top: 80px;
+  padding-left: 10px;
 }
 
 .aboveTitleLine {
@@ -42,7 +45,7 @@
   margin: 0;
   padding: 0;
   align-items: center;
-  width: 82%;
+  width: 100%;
 }
 .buttons {
   align-self: flex-start;
@@ -62,10 +65,6 @@
   padding: 0;
   margin: 40px 0 0;
   width: 100%;
-}
-
-.slider {
-  gap: 40px;
 }
 
 .navButton {
@@ -108,9 +107,30 @@
   -webkit-transform: rotate(135deg);
 }
 
+.slick-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider {
+  > div {
+    margin-inline: -50px;
+    width: 100%;
+  }
+}
+
 @media (max-width: 991px) {
   .portfolio {
     max-width: 100%;
-    margin-top: 40px;
+    padding: 40px 5px;
+    justify-content: center;
+    display: flex;
+  }
+  .slider {
+    > div {
+      margin-inline: 0;
+      width: 100%;
+    }
   }
 }

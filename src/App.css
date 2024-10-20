@@ -49,6 +49,9 @@ body {
 .App {
   text-align: center;
   background-color: var(--bg-color);
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
 
 .visually-hidden {

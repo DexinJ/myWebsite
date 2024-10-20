@@ -45,7 +45,6 @@ const portfolioData = [
     image: "/images/Fileread/fileread-sticky-header-c.png",
   },
 ];
-const slides = 3;
 const Portfolio = () => {
   let sliderRef = useRef(null);
   const next = () => {
@@ -58,10 +57,36 @@ const Portfolio = () => {
   const settings = {
     dots: true,
     infinite: true,
-    slidesToShow: slides,
+    slidesToShow: 4,
     slidesToScroll: 1,
     swipeToSlide: true,
     arrows: false,
+    centerMode: true,
+    className: styles.slider,
+    responsive: [
+      {
+        breakpoint: 1560,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 1205,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 800,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          centerPadding: "0",
+        },
+      },
+    ],
   };
   return (
     <section className={styles.portfolio}>

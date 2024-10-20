@@ -3,7 +3,7 @@
  */
 .serviceItem {
   border-radius: 8px;
-  background: var(--White, #fff);
+  background: var(--Light-2);
   display: flex;
   flex-direction: column;
   align-items: center;
