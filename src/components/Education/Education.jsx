@@ -32,7 +32,7 @@ const Education = () => {
             <EducationItem key={index} {...item} />
           ))}
         </div>
-        <div className={styles.timeline} />
+        {/* <div className={styles.timeline} /> */}
       </div>
     </section>
   );

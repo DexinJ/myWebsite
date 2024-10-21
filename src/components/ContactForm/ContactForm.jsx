@@ -33,7 +33,7 @@ const ContactForm = () => {
         <div className={styles.infoItem}>
           <div className={styles.icon}>
             <img
-              src="https://cdn.builder.io/api/v1/image/assets/TEMP/3d2331fcd998aca355c1c6e0a7b26bd7cbe93c971edce00395788b9249d68482?placeholderIfAbsent=true&apiKey=f68351809d1b498a88d39fd40ad3ba29"
+              src="/images/icons/phone-calling-svgrepo-com.svg"
               alt=""
               className={styles.iconImage}
             />
@@ -46,7 +46,7 @@ const ContactForm = () => {
         <div className={styles.infoItem}>
           <div className={styles.icon}>
             <img
-              src="https://cdn.builder.io/api/v1/image/assets/TEMP/8e8d9b8af5fca77f846d9b5984664569edb16bcc95219e2b7125752885f578d5?placeholderIfAbsent=true&apiKey=f68351809d1b498a88d39fd40ad3ba29"
+              src="/images/icons/mail-svgrepo-com.svg"
               alt=""
               className={styles.iconImage}
             />

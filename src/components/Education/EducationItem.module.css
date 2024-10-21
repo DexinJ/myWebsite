@@ -3,6 +3,7 @@
  */
 .educationItem {
   margin-bottom: 64px;
+  max-width: 371px;
 }
 
 .header {
@@ -26,6 +27,7 @@
 .details {
   margin-left: 36px;
   margin-top: 10px;
+  text-align: left;
 }
 
 .degree {

@@ -22,13 +22,13 @@ const experienceData = [
 const Experience = () => {
   return (
     <section className={styles.experience}>
+      <div className={styles.header}>
+        <div className={styles.aboveTitleLine} />
+        <p className={styles.aboveTitle}>career path</p>
+      </div>
+      <h2 className={styles.title}>Work Experiences</h2>
       <div className={styles.container}>
         <div className={styles.sidebar}>
-          <div className={styles.header}>
-            <div className={styles.aboveTitleLine} />
-            <p className={styles.aboveTitle}>career path</p>
-          </div>
-          <h2 className={styles.title}>Work Experiences</h2>
           <div className={styles.companyList}>
             <button className={styles.companyButton}>
               Slopedia

@@ -8,9 +8,8 @@
   background-color: var(--bg-color);
   align-items: left;
   color: var(--text-color);
-  padding: 80px 20px 200px;
+  padding: 80px 40px 200px;
   box-sizing: border-box;
-  overflow: hidden;
 }
 
 .header {
@@ -18,7 +17,6 @@
   gap: 16px;
   align-items: center;
   margin-top: 80px;
-  padding-left: 10px;
 }
 
 .aboveTitleLine {
@@ -37,6 +35,7 @@
   color: var(--Cinder, #232e35);
   margin-top: 9px;
   font: 700 36px Plus Jakarta Sans, -apple-system, Roboto, Helvetica, sans-serif;
+  text-align: left;
 }
 
 .content {
@@ -44,8 +43,8 @@
   flex-direction: column;
   margin: 0;
   padding: 0;
-  align-items: center;
   width: 100%;
+  overflow: hidden;
 }
 .buttons {
   align-self: flex-start;
@@ -123,7 +122,7 @@
 @media (max-width: 991px) {
   .portfolio {
     max-width: 100%;
-    padding: 40px 5px;
+    padding: 40px 10px;
     justify-content: center;
     display: flex;
   }

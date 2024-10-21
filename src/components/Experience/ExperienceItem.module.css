@@ -43,7 +43,7 @@
 
 .divider {
   border: none;
-  border-top: 1px solid #f1f1f1;
+  border-top: 1px solid var(--Cinder);
   margin: 31px 0;
 }
 
@@ -60,7 +60,7 @@
 }
 
 .bullet {
-  background: var(--Light-4, #d9d9d9);
+  background: var(--Cinder-Light);
   width: 10px;
   height: 2px;
 }

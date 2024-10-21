@@ -5,13 +5,15 @@
   background-color: var(--Light-1);
   color: var(--text-color);
   width: 100%;
-  padding: 109px 0;
+  padding: 109px 40px;
+
+  box-sizing: border-box;
 }
 
 .container {
   display: flex;
   width: 100%;
-  gap: 20px;
+  gap: 40px;
 }
 
 .sidebar {
@@ -22,7 +24,6 @@
   display: flex;
   gap: 16px;
   align-items: center;
-  padding-left: 10px;
 }
 
 .aboveTitleLine {
@@ -42,6 +43,7 @@
   color: var(--Cinder, #232e35);
   margin-top: 8px;
   font: 700 36px Plus Jakarta Sans, -apple-system, Roboto, Helvetica, sans-serif;
+  text-align: left;
 }
 
 .companyList {
@@ -76,8 +78,7 @@
 
 @media (max-width: 991px) {
   .experience {
-    box-sizing: border-box;
-    padding: 100px 20px;
+    padding: 100px 10px;
   }
 
   .container {

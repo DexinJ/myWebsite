@@ -57,20 +57,13 @@ const Portfolio = () => {
   const settings = {
     dots: true,
     infinite: true,
-    slidesToShow: 4,
+    slidesToShow: 3,
     slidesToScroll: 1,
     swipeToSlide: true,
     arrows: false,
     centerMode: true,
     className: styles.slider,
     responsive: [
-      {
-        breakpoint: 1560,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1,
-        },
-      },
       {
         breakpoint: 1205,
         settings: {

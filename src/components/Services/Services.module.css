@@ -5,7 +5,8 @@
   background-color: var(--Light-1);
   color: var(--text-color);
   width: 100%;
-  padding: 115px 0 184px;
+  box-sizing: border-box;
+  padding: 20px 40px 180px;
 }
 
 .container {
@@ -20,7 +21,6 @@
   gap: 16px;
   align-items: center;
   margin-top: 80px;
-  padding-left: 10px;
 }
 
 .aboveTitleLine {
@@ -39,6 +39,7 @@
   color: var(--Cinder, #232e35);
   margin-top: 8px;
   font: 700 36px Plus Jakarta Sans, -apple-system, Roboto, Helvetica, sans-serif;
+  text-align: left;
 }
 
 .items {
@@ -46,17 +47,15 @@
   margin-top: 104px;
   align-items: center;
   row-gap: 40px;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-wrap: wrap;
   width: 100%;
 }
 
 @media (max-width: 991px) {
   .services {
-    box-sizing: border-box;
-    padding: 100px 20px;
+    padding: 20px 10px;
   }
-
   .container {
     max-width: 100%;
   }
