@@ -17,9 +17,32 @@ const experienceData = [
       "Created responsive front-end solutions using React.js and Tailwind CSS, and actively participated in team meetings.",
     ],
   },
+  {
+    company: "Slopedia",
+    position: "Full-stack Developer",
+    location: "Remote, USA",
+    period: "Jan 2024 - Mar 2024",
+    tags: ["React.js", "SQL"],
+    responsibilities: [
+      "Conducted code reviews via GitHub pull requests, ensuring code quality and adherence to best practices.",
+      "Created responsive front-end solutions using React.js and Tailwind CSS, and actively participated in team meetings.",
+    ],
+  },
+  {
+    company: "Slopedia",
+    position: "Full-stack Developer",
+    location: "Remote, USA",
+    period: "Jan 2024 - Mar 2024",
+    tags: ["React.js", "SQL"],
+    responsibilities: [
+      "Conducted code reviews via GitHub pull requests, ensuring code quality and adherence to best practices.",
+      "Created responsive front-end solutions using React.js and Tailwind CSS, and actively participated in team meetings.",
+    ],
+  },
 ];
 
 const Experience = () => {
+  [currentExpierence, setCurrentExpierence] = useContex;
   return (
     <section className={styles.experience}>
       <div className={styles.header}>
