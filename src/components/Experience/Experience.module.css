@@ -76,6 +76,12 @@
   width: 73%;
 }
 
+.activeButton {
+  /* Add styles for the active button state */
+  font-weight: bold;
+  background-color: #f0f0f0; /* or any color you prefer */
+}
+
 @media (max-width: 991px) {
   .experience {
     padding: 100px 10px;

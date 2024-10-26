@@ -30,30 +30,32 @@ const ContactForm = () => {
         </button>
       </form>
       <div className={styles.contactInfo}>
-        <div className={styles.infoItem}>
-          <div className={styles.icon}>
-            <img
-              src="/images/icons/phone-calling-svgrepo-com.svg"
-              alt=""
-              className={styles.iconImage}
-            />
+        <div className={styles.contactList}>
+          <div className={styles.infoItem}>
+            <div className={styles.icon}>
+              <img
+                src="/images/icons/phone-calling-svgrepo-com.svg"
+                alt=""
+                className={styles.iconImage}
+              />
+            </div>
+            <div className={styles.infoContent}>
+              <h3 className={styles.infoTitle}>Phone</h3>
+              <p className={styles.infoText}>(818) 614-8868</p>
+            </div>
           </div>
-          <div className={styles.infoContent}>
-            <h3 className={styles.infoTitle}>Phone</h3>
-            <p className={styles.infoText}>(818) 614-8868</p>
-          </div>
-        </div>
-        <div className={styles.infoItem}>
-          <div className={styles.icon}>
-            <img
-              src="/images/icons/mail-svgrepo-com.svg"
-              alt=""
-              className={styles.iconImage}
-            />
-          </div>
-          <div className={styles.infoContent}>
-            <h3 className={styles.infoTitle}>E-Mail</h3>
-            <p className={styles.infoText}>jindexin6@gmail.com</p>
+          <div className={styles.infoItem}>
+            <div className={styles.icon}>
+              <img
+                src="/images/icons/mail-svgrepo-com.svg"
+                alt=""
+                className={styles.iconImage}
+              />
+            </div>
+            <div className={styles.infoContent}>
+              <h3 className={styles.infoTitle}>E-Mail</h3>
+              <p className={styles.infoText}>jindexin6@gmail.com</p>
+            </div>
           </div>
         </div>
       </div>

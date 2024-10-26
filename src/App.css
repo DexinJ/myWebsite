@@ -46,6 +46,10 @@ body {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
 .App {
   text-align: center;
   background-color: var(--bg-color);

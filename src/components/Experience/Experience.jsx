@@ -4,6 +4,7 @@
 import React from "react";
 import styles from "./Experience.module.css";
 import ExperienceItem from "./ExperienceItem";
+import { useState } from "react";
 
 const experienceData = [
   {
@@ -42,7 +43,16 @@ const experienceData = [
 ];
 
 const Experience = () => {
-  [currentExpierence, setCurrentExpierence] = useContex;
+  const [activeCompany, setActiveCompany] = useState(experienceData[0].company);
+
+  const handleCompanyClick = (company) => {
+    setActiveCompany(company);
+  };
+
+  const activeExperience = experienceData.find(
+    (exp) => exp.company === activeCompany
+  );
+
   return (
     <section className={styles.experience}>
       <div className={styles.header}>
@@ -53,24 +63,28 @@ const Experience = () => {
       <div className={styles.container}>
         <div className={styles.sidebar}>
           <div className={styles.companyList}>
-            <button className={styles.companyButton}>
-              Slopedia
-              <img
-                src="https://cdn.builder.io/api/v1/image/assets/TEMP/cca51eb5c9fbc81de644342e432b34aca3567585850ba65854afcd26eca24d9d?placeholderIfAbsent=true&apiKey=f68351809d1b498a88d39fd40ad3ba29"
-                alt=""
-                className={styles.companyIcon}
-              />
-            </button>
-            <button className={styles.companyButton}>Fileread AI</button>
-            <button className={styles.companyButton}>
-              Jisan Research Institute
-            </button>
+            {experienceData.map((exp, index) => (
+              <button
+                key={index}
+                className={`${styles.companyButton} ${
+                  activeCompany === exp.company ? styles.activeButton : ""
+                }`}
+                onClick={() => handleCompanyClick(exp.company)}
+              >
+                {exp.company}
+                {activeCompany === exp.company && (
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/cca51eb5c9fbc81de644342e432b34aca3567585850ba65854afcd26eca24d9d?placeholderIfAbsent=true&apiKey=f68351809d1b498a88d39fd40ad3ba29"
+                    alt=""
+                    className={styles.companyIcon}
+                  />
+                )}
+              </button>
+            ))}
           </div>
         </div>
         <div className={styles.content}>
-          {experienceData.map((experience, index) => (
-            <ExperienceItem key={index} {...experience} />
-          ))}
+          <ExperienceItem {...activeExperience} />
         </div>
       </div>
     </section>
