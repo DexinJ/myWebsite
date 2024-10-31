@@ -4,21 +4,30 @@ import SkillBar from "./SkillBar";
 
 const skillsData = [
   { name: "React", percentage: 67 },
-  { name: "Angular", percentage: 52 },
-  { name: "Javascript", percentage: 64 },
+  { name: "Python", percentage: 64 },
+  { name: "C++", percentage: 62 },
+  { name: "SQL", percentage: 60 },
+  { name: "Data Visulization", percentage: 55 },
 ];
 
 const Skills = () => {
   return (
-    <section className={styles.skills}>
-      <p className={styles.description}>
-        For 5+ years, I have been continuously learning in the field of
-        front-end and experimenting with new technologies and frameworks, and
-        here you can see a summary of my skills.
+    <section className={styles.skills} aria-labelledby="skills-title">
+      <h2 id="skills-title" className="visually-hidden">
+        Technical Skills
+      </h2>
+      <p className={styles.description} role="doc-subtitle">
+        I have spent over five years continuously expanding my knowledge in
+        front-end, back-end, and data analysis, while experimenting with new
+        technologies and frameworks. Here you can see a summary of my skills.
       </p>
-      {skillsData.map((skill, index) => (
-        <SkillBar key={index} {...skill} />
-      ))}
+      <div role="list" aria-label="Skills list">
+        {skillsData.map((skill, index) => (
+          <div key={index} role="listitem">
+            <SkillBar {...skill} />
+          </div>
+        ))}
+      </div>
     </section>
   );
 };

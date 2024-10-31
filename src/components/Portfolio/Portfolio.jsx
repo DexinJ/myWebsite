@@ -221,28 +221,42 @@ const Portfolio = () => {
     ],
   };
   return (
-    <section className={styles.portfolio}>
+    <section className={styles.portfolio} aria-label="Portfolio section">
       <div className={styles.header}>
-        <div className={styles.aboveTitleLine} />
+        <div className={styles.aboveTitleLine} aria-hidden="true" />
         <p className={styles.aboveTitle}>MY WORKS</p>
       </div>
       <div className={styles.content}>
-        <h2 className={styles.title}>Featured Portfolios</h2>
-        <div className={styles.buttons}>
+        <h2 className={styles.title} id="portfolio-title">
+          Featured Portfolios
+        </h2>
+        <div
+          className={styles.buttons}
+          role="group"
+          aria-label="Portfolio navigation"
+        >
           <button
-            className={styles.navButton + " " + styles.navButtonLeft}
+            className={`${styles.navButton} ${styles.navButtonLeft}`}
             onClick={previous}
+            aria-label="Previous portfolio items"
           >
-            <div className={styles.arrow + " " + styles.left} />
+            <div
+              className={`${styles.arrow} ${styles.left}`}
+              aria-hidden="true"
+            />
           </button>
           <button
-            className={styles.navButton + " " + styles.navButtonRight}
+            className={`${styles.navButton} ${styles.navButtonRight}`}
             onClick={next}
+            aria-label="Next portfolio items"
           >
-            <div className={styles.arrow + " " + styles.right} />
+            <div
+              className={`${styles.arrow} ${styles.right}`}
+              aria-hidden="true"
+            />
           </button>
         </div>
-        <div className={styles.items}>
+        <div className={styles.items} aria-labelledby="portfolio-title">
           <Slider
             ref={(slider) => {
               sliderRef = slider;
@@ -250,7 +264,18 @@ const Portfolio = () => {
             {...settings}
           >
             {portfolioData.map((item, index) => (
-              <div key={index} onClick={() => openModal(item)}>
+              <div
+                key={index}
+                onClick={() => openModal(item)}
+                role="button"
+                tabIndex={0}
+                aria-label={`View details for ${item.title}`}
+                onKeyPress={(e) => {
+                  if (e.key === "Enter" || e.key === " ") {
+                    openModal(item);
+                  }
+                }}
+              >
                 <PortfolioItem {...item} />
               </div>
             ))}

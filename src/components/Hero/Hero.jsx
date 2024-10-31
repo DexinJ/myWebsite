@@ -84,6 +84,7 @@ const Hero = () => {
           ))}
         </div>
       </div>
+      <img className={styles.heroImage} alt="Tony Jin" src="/images/004.jpg" />
     </section>
   );
 };

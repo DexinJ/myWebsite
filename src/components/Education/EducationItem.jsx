@@ -3,16 +3,23 @@ import styles from "./EducationItem.module.css";
 
 const EducationItem = ({ institution, degree, period }) => {
   return (
-    <div className={styles.educationItem}>
+    <article className={styles.educationItem} tabIndex="0">
       <div className={styles.header}>
-        <div className={styles.circle} />
+        <div className={styles.circle} aria-hidden="true" />
         <h3 className={styles.institution}>{institution}</h3>
       </div>
+
       <div className={styles.details}>
-        <p className={styles.degree}>{degree}</p>
-        <p className={styles.period}>{period}</p>
+        <p className={styles.degree}>
+          <span className="visually-hidden">Degree: </span>
+          {degree}
+        </p>
+        <p className={styles.period}>
+          <span className="visually-hidden">Period: </span>
+          {period}
+        </p>
       </div>
-    </div>
+    </article>
   );
 };
 

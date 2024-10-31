@@ -3,7 +3,6 @@ import styles from "./Header.module.css";
 import Logo from "../Logo/Logo";
 import Navigation from "../Navigation/Navigation";
 import ThemeToggle from "../ThemeToggle/ThemeToggle";
-import Button from "../Button/Button";
 import { useTheme } from "../../utils/ThemeContext";
 
 const Header = ({ scrollToSection }) => {
@@ -11,7 +10,7 @@ const Header = ({ scrollToSection }) => {
   const [prevScrollPos, setPrevScrollPos] = useState(window.scrollY);
   const [headerVisible, setHeaderVisible] = useState(true);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isMobile, setIsMobile] = useState(window.innerWidth < 1000);
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 991);
 
   const menuRef = useRef(null);
 
@@ -82,39 +81,56 @@ const Header = ({ scrollToSection }) => {
       className={`${styles.header} ${!headerVisible ? styles.hidden : ""} ${
         isDarkMode ? styles.darkMode : ""
       }`}
+      role="banner"
     >
       <div className={styles.contents}>
         <Logo />
         {isMobile ? (
           <>
-            <Button className={styles.menuButton} onClick={toggleMenu}>
-              <img
-                src={
-                  isDarkMode
-                    ? "/images/icons/white-menu-svgrepo-com.svg"
-                    : "/images/icons/menu-svgrepo-com.svg"
-                }
-                alt="Menu"
-                className={styles.menuIcon}
-              />
-            </Button>
+            <button
+              className={styles.menuButton}
+              onClick={toggleMenu}
+              aria-expanded={isMenuOpen}
+              aria-label="Toggle navigation menu"
+            >
+              <svg
+                width="24px"
+                height="24px"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+              >
+                <path
+                  d="M4 6H20M4 12H20M4 18H20"
+                  stroke={isDarkMode ? "#ffffff" : "#000000"}
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+            </button>
             <div
               className={`${styles.mobileMenu} ${
                 isMenuOpen ? styles.open : ""
               }`}
               ref={menuRef}
+              role="navigation"
+              aria-label="Mobile navigation"
             >
               <ThemeToggle />
               <Navigation
                 onItemClick={handleMenuItemClick}
                 scrollToSection={scrollToSection}
               />
-              <Button
+              <a
+                href="/path-to-resume.pdf"
                 className={styles.resumeButton}
                 onClick={handleMenuItemClick}
+                aria-label="Download Resume"
               >
                 Resume
-              </Button>
+              </a>
             </div>
           </>
         ) : (
@@ -125,7 +141,14 @@ const Header = ({ scrollToSection }) => {
             />
             <div className={styles.rightContent}>
               <ThemeToggle />
-              <Button className={styles.resumeButton}>Resume</Button>
+              <a
+                href="/Resume/Tony_Jin_Resume.pdf"
+                className={styles.resumeButton}
+                aria-label="Download Resume"
+                target="_blank"
+              >
+                Resume
+              </a>
             </div>
           </>
         )}

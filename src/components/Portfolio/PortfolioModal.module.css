@@ -103,6 +103,7 @@
   line-height: 1.6;
   margin-bottom: 20px;
   color: #333;
+  text-align: left;
 }
 
 .technologies {
@@ -112,6 +113,7 @@
 .technologies h3 {
   margin-bottom: 10px;
   color: #222;
+  text-align: left;
 }
 
 .techList {

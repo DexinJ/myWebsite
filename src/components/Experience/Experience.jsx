@@ -1,7 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./Experience.module.css";
 import ExperienceItem from "./ExperienceItem";
-import { useState } from "react";
 
 const experienceData = [
   {
@@ -46,20 +45,79 @@ const Experience = () => {
     setActiveCompany(company);
   };
 
+  const handleKeyPress = (e, company) => {
+    if (e.key === "Enter" || e.key === " ") {
+      e.preventDefault();
+      handleCompanyClick(company);
+    }
+  };
+
   const activeExperience = experienceData.find(
     (exp) => exp.company === activeCompany
   );
 
+  const handleKeyboardNavigation = (e, index) => {
+    const buttons = document.querySelectorAll(`.${styles.companyButton}`);
+    const currentIndex = Array.from(buttons).findIndex(
+      (button) => button.getAttribute("aria-selected") === "true"
+    );
+
+    switch (e.key) {
+      case "ArrowDown":
+      case "ArrowRight":
+        e.preventDefault();
+        if (currentIndex < buttons.length - 1) {
+          const nextCompany = experienceData[currentIndex + 1].company;
+          handleCompanyClick(nextCompany);
+          buttons[currentIndex + 1].focus();
+        }
+        break;
+      case "ArrowUp":
+      case "ArrowLeft":
+        e.preventDefault();
+        if (currentIndex > 0) {
+          const prevCompany = experienceData[currentIndex - 1].company;
+          handleCompanyClick(prevCompany);
+          buttons[currentIndex - 1].focus();
+        }
+        break;
+      case "Home":
+        e.preventDefault();
+        const firstCompany = experienceData[0].company;
+        handleCompanyClick(firstCompany);
+        buttons[0].focus();
+        break;
+      case "End":
+        e.preventDefault();
+        const lastCompany = experienceData[experienceData.length - 1].company;
+        handleCompanyClick(lastCompany);
+        buttons[buttons.length - 1].focus();
+        break;
+      default:
+        break;
+    }
+  };
+
   return (
-    <section className={styles.experience}>
+    <section className={styles.experience} aria-labelledby="experience-heading">
       <div className={styles.header}>
-        <div className={styles.aboveTitleLine} />
-        <p className={styles.aboveTitle}>career path</p>
+        <div className={styles.aboveTitleLine} aria-hidden="true" />
+        <p className={styles.aboveTitle} aria-hidden="true">
+          career path
+        </p>
       </div>
-      <h2 className={styles.title}>Work Experiences</h2>
+
+      <h2 id="experience-heading" className={styles.title}>
+        Work Experiences
+      </h2>
+
       <div className={styles.container}>
-        <div className={styles.sidebar}>
-          <div className={styles.companyList}>
+        <nav className={styles.sidebar} aria-label="Company navigation">
+          <div
+            className={styles.companyList}
+            role="tablist"
+            aria-label="Work experience by company"
+          >
             {experienceData.map((exp, index) => (
               <button
                 key={index}
@@ -67,20 +125,35 @@ const Experience = () => {
                   activeCompany === exp.company ? styles.activeButton : ""
                 }`}
                 onClick={() => handleCompanyClick(exp.company)}
+                onKeyPress={(e) => handleKeyPress(e, exp.company)}
+                role="tab"
+                aria-selected={activeCompany === exp.company}
+                aria-controls={`panel-${exp.company.toLowerCase()}`}
+                id={`tab-${exp.company.toLowerCase()}`}
+                tabIndex={activeCompany === exp.company ? 0 : -1}
+                onKeyDown={(e) => handleKeyboardNavigation(e, index)}
               >
-                {exp.company}
+                <span>{exp.company}</span>
                 {activeCompany === exp.company && (
                   <img
-                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/cca51eb5c9fbc81de644342e432b34aca3567585850ba65854afcd26eca24d9d?placeholderIfAbsent=true&apiKey=f68351809d1b498a88d39fd40ad3ba29"
+                    src="/images/icons/right-arrow-svgrepo-com.svg"
                     alt=""
                     className={styles.companyIcon}
+                    aria-hidden="true"
                   />
                 )}
               </button>
             ))}
           </div>
-        </div>
-        <div className={styles.content}>
+        </nav>
+
+        <div
+          className={styles.content}
+          role="tabpanel"
+          id={`panel-${activeCompany.toLowerCase()}`}
+          aria-labelledby={`tab-${activeCompany.toLowerCase()}`}
+          tabIndex={0}
+        >
           <ExperienceItem {...activeExperience} />
         </div>
       </div>

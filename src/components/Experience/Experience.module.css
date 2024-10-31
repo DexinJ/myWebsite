@@ -97,3 +97,41 @@
     margin-top: 40px;
   }
 }
+
+/* Accessibility-focused styles */
+.companyButton:focus-visible {
+  outline: 3px solid #007bff;
+  outline-offset: 2px;
+  position: relative;
+  z-index: 1;
+}
+
+.content:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px #007bff;
+}
+
+/* High contrast support */
+@media (forced-colors: active) {
+  .activeButton {
+    border: 2px solid CanvasText;
+  }
+
+  .companyButton:focus-visible {
+    outline: 2px solid CanvasText;
+  }
+}
+
+/* Reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  .companyButton {
+    transition: none;
+  }
+}
+
+/* Support for Windows High Contrast mode */
+@media screen and (-ms-high-contrast: active) {
+  .activeButton {
+    border: 2px solid WindowText;
+  }
+}

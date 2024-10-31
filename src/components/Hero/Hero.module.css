@@ -2,19 +2,20 @@
   display: flex;
   width: 100%;
   gap: 20px;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: space-between;
   background-color: var(--bg-color);
   color: var(--text-color);
   padding: 40px 40px 200px;
   box-sizing: border-box;
+  margin-top: 222px;
 }
 
 .content {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-top: 222px;
+
   width: 100%;
 }
 
@@ -48,9 +49,11 @@
 }
 
 .heroImage {
-  width: 100%;
-  aspect-ratio: 0.84;
-  object-fit: contain;
+  object-fit: cover;
+  max-width: 30%;
+  border-radius: 25px;
+  aspect-ratio: 1;
+  margin: auto auto;
 }
 
 .skillIcons {
@@ -69,6 +72,14 @@
   .skillIcon {
     width: 30px;
     height: 30px;
+  }
+  .hero {
+    flex-wrap: wrap;
+    row-gap: 40px;
+    margin-top: 110px;
+  }
+  .heroImage {
+    max-width: 50%;
   }
 }
 

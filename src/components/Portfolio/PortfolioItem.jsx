@@ -15,14 +15,6 @@ const PortfolioItem = ({ title, tag, image }) => {
               {tags}
             </span>
           ))}
-
-          <img
-            src={
-              "https://cdn.builder.io/api/v1/image/assets/TEMP/dd2091c14ab2e8f79777f01bc51f84fd01c6eb3a92f235c48db99fbf48faab87?placeholderIfAbsent=true&apiKey=f68351809d1b498a88d39fd40ad3ba29"
-            }
-            alt=""
-            className={styles.tagIcon}
-          />
         </div>
       </div>
     </div>

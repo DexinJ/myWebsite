@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./Education.module.css";
 import EducationItem from "./EducationItem";
+import Skills from "../Skills/Skills";
 
 const educationData = [
   {
@@ -17,19 +18,31 @@ const educationData = [
 
 const Education = () => {
   return (
-    <section className={styles.education}>
+    <section className={styles.education} aria-labelledby="education-heading">
       <div className={styles.header}>
-        <div className={styles.aboveTitleLine} />
-        <p className={styles.aboveTitle}>LEARNING PATH</p>
+        <div className={styles.aboveTitleLine} aria-hidden="true" />
+        <p className={styles.aboveTitle} aria-hidden="true">
+          LEARNING PATH
+        </p>
       </div>
-      <h2 className={styles.title}>Education & Skills</h2>
+
+      <h2 id="education-heading" className={styles.title}>
+        Education & Skills
+      </h2>
+
       <div className={styles.content}>
-        <div className={styles.educationList}>
+        <div
+          className={styles.educationList}
+          role="list"
+          aria-label="Education history"
+        >
           {educationData.map((item, index) => (
-            <EducationItem key={index} {...item} />
+            <div key={index} role="listitem">
+              <EducationItem {...item} />
+            </div>
           ))}
         </div>
-        {/* <div className={styles.timeline} /> */}
+        <Skills />
       </div>
     </section>
   );

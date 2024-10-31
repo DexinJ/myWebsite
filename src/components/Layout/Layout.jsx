@@ -9,9 +9,28 @@ const Layout = ({ children, scrollToSection }) => {
 
   return (
     <div className={`${styles.layout} ${isDarkMode ? styles.darkMode : ""}`}>
-      <Header scrollToSection={scrollToSection} />
-      <main className={styles.main}>{children}</main>
-      <Footer />
+      <a href="#main-content" className="skip-link">
+        Skip to main content
+      </a>
+
+      <header role="banner">
+        <Header scrollToSection={scrollToSection} />
+      </header>
+
+      <main id="main-content" role="main" tabIndex="-1">
+        {children}
+      </main>
+
+      <footer role="contentinfo">
+        <Footer />
+      </footer>
+
+      <div
+        aria-live="polite"
+        className="visually-hidden"
+        role="status"
+        id="announcements"
+      ></div>
     </div>
   );
 };

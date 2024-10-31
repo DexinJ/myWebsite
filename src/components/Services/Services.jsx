@@ -25,16 +25,24 @@ const servicesData = [
 
 const Services = () => {
   return (
-    <section className={styles.services}>
+    <section className={styles.services} aria-labelledby="services-heading">
       <div className={styles.container}>
         <div className={styles.header}>
-          <div className={styles.aboveTitleLine} />
-          <p className={styles.aboveTitle}>SERVICES</p>
+          <div className={styles.aboveTitleLine} aria-hidden="true" />
+          <p className={styles.aboveTitle} aria-hidden="true">
+            SERVICES
+          </p>
         </div>
-        <h2 className={styles.title}>Specialized in</h2>
-        <div className={styles.items}>
+
+        <h2 id="services-heading" className={styles.title}>
+          Specialized in
+        </h2>
+
+        <div className={styles.items} role="list" aria-label="Services offered">
           {servicesData.map((service, index) => (
-            <ServiceItem key={index} {...service} />
+            <div key={index} role="listitem">
+              <ServiceItem {...service} />
+            </div>
           ))}
         </div>
       </div>

@@ -74,6 +74,13 @@
   margin-right: 24px;
 }
 
+.message {
+  display: flex;
+  gap: 5px;
+  margin: 15px 0 0;
+  align-items: center;
+}
+
 .iconImage {
   width: 24px;
   height: 24px;
