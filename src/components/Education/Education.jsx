@@ -5,13 +5,21 @@ import Skills from "../Skills/Skills";
 
 const educationData = [
   {
+    institution: "Coursera",
+    degrees: [
+      `IBM AI Engineering Specialization`,
+      `IBM Data Analyst Specialization`,
+    ],
+    period: "2024",
+  },
+  {
     institution: "TripleTen",
-    degree: "Fullstack Development specialization",
+    degrees: ["Fullstack Development specialization"],
     period: "2023 - 2024",
   },
   {
     institution: "UC Santa Cruz",
-    degree: "Bachelor's degree - Computer Science",
+    degrees: ["Bachelor's degree - Computer Science"],
     period: "2016 - 2022",
   },
 ];
