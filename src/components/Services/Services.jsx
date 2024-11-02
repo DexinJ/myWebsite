@@ -7,19 +7,19 @@ const servicesData = [
     icon: "/images/icons/layer-svgrepo-com.svg",
     title: "Application Development",
     description:
-      "Standard designing, building, and implementing your applications with documentation.",
+      "Designing, building, and implementing applications, complete with thorough documentation.",
   },
   {
     icon: "/images/icons/globe-svgrepo-com.svg",
     title: "Web Development",
     description:
-      "Create and maintain your websites and also take care of its performance and traffic capacity.",
+      "Developing and maintaining websites, ensuring optimal performance and handling traffic capacity efficiently.",
   },
   {
     icon: "/images/icons/bar-chart-5-svgrepo-com.svg",
     title: "AI & Data Analytics",
     description:
-      "AI-powered analysis, interpretation, and visualization of datasets with accuracy and scalability.",
+      "Conducting AI-powered analysis, interpretation, and visualization of datasets, ensuring accuracy and scalability.",
   },
 ];
 

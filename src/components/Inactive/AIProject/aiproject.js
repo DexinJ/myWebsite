@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import "./aiproject.css";
-import { images } from "../../utils/constants";
+import { images } from "../../../utils/constants";
 
 const AIproject = () => {
   const ai = images.ai;

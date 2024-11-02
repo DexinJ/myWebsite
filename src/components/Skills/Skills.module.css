@@ -12,6 +12,13 @@
   margin: 0 0 18px;
   text-align: left;
 }
+.skillsList {
+  display: flex;
+
+  flex-direction: column;
+  justify-content: space-around;
+  height: 80%;
+}
 
 @media (max-width: 991px) {
   .skills {

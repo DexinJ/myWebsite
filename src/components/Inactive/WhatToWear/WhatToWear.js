@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { images } from "../../utils/constants";
+import { images } from "../../../utils/constants";
 import "./WhatToWear.css";
 
 const WhatToWear = () => {

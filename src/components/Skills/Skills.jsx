@@ -3,11 +3,10 @@ import styles from "./Skills.module.css";
 import SkillBar from "./SkillBar";
 
 const skillsData = [
-  { name: "React", percentage: 67 },
-  { name: "Python", percentage: 64 },
-  { name: "C++", percentage: 62 },
-  { name: "SQL", percentage: 60 },
-  { name: "Data Visulization", percentage: 55 },
+  { name: "React", percentage: 100 },
+  { name: "Python", percentage: 100 },
+  { name: "SQL", percentage: 100 },
+  { name: "Data Visulization", percentage: 100 },
 ];
 
 const Skills = () => {
@@ -18,10 +17,11 @@ const Skills = () => {
       </h2>
       <p className={styles.description} role="doc-subtitle">
         I have spent over five years continuously expanding my knowledge in
-        front-end, back-end, and data analysis, while experimenting with new
-        technologies and frameworks. Here you can see a summary of my skills.
+        front-end, back-end, data analysis, and machine learning, while
+        experimenting with new technologies and frameworks. Here you can see a
+        summary of my skills.
       </p>
-      <div role="list" aria-label="Skills list">
+      <div role="list" aria-label="Skills list" className={styles.skillsList}>
         {skillsData.map((skill, index) => (
           <div key={index} role="listitem">
             <SkillBar {...skill} />

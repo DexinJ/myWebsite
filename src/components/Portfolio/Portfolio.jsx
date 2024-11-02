@@ -9,7 +9,7 @@ import PortfolioModal from "./PortfolioModal";
 const portfolioData = [
   {
     title: "Recipe Searcher",
-    tag: ["React.js", "HTML", "CSS", "API", "MongoDB", "Node.js"],
+    tag: ["React.js", "CSS", "MongoDB", "Node.js", "API", "HTML"],
     image: "/images/RecipeSearcher/RecipeSearcher2.png",
   },
   {
@@ -146,7 +146,7 @@ const portfolioDetails = [
       "/images/Fileread/fileread-multiselect-c.gif",
     ],
     description:
-      "An AI-powered document analysis tool that can read and extract information from various file formats, providing intelligent insights and summaries.",
+      "Implemented a shift-select feature and a sticky header in FileRead AI to enhance user experience by allowing seamless multi-selection and improved navigation.",
     technologies: [
       "React.js",
       "HTML",
