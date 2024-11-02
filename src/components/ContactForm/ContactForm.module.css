@@ -111,6 +111,8 @@
 @media (max-width: 991px) {
   .contactForm {
     padding: 80px 20px;
+  }
+  .content {
     flex-direction: column;
   }
 
