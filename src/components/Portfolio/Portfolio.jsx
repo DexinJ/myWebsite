@@ -20,7 +20,7 @@ const portfolioData = [
   {
     title: "What to Wear",
     tag: ["React.js", "HTML", "CSS", "API", "MongoDB", "Node.js"],
-    image: `/images/wtwr/wtwr5.png`,
+    image: `/images/WTWR/wtwr5.png`,
   },
   {
     title: "UC Projects",
@@ -90,12 +90,13 @@ const portfolioDetails = [
     title: "What to Wear",
     tag: ["React.js", "HTML", "CSS", "API", "MongoDB", "Node.js"],
     images: [
-      `/images/wtwr/wtwr1.png`,
-      `/images/wtwr/wtwr3.png`,
-      `/images/wtwr/wtwr4.png`,
-      `/images/wtwr/wtwr2.png`,
-      `/images/wtwr/wtwr5.png`,
+      `/images/WTWR/wtwr1.png`,
+      `/images/WTWR/wtwr3.png`,
+      `/images/WTWR/wtwr4.png`,
+      `/images/WTWR/wtwr2.png`,
+      `/images/WTWR/wtwr5.png`,
     ],
+
     description:
       "A weather-based clothing recommendation app that suggests appropriate outfits based on current weather conditions and user preferences.",
     technologies: [
