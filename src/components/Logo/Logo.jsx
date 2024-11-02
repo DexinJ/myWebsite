@@ -12,7 +12,7 @@ const Logo = () => {
       aria-label="Tony Jin - Back to top"
     >
       <img
-        src="/images/icons/icon.svg"
+        src="/images/icons/iconP.svg"
         alt="Logo icon"
         className={styles.logoIcon}
         aria-hidden="true"
