@@ -1,54 +1,15 @@
+import React from "react";
+import { ThemeProvider } from "./utils/ThemeContext";
+import Home from "./pages/Home/Home";
 import "./App.css";
-import "./page.css";
-import React, { useEffect } from "react";
-import Rage from "./components/Rage/rage";
-import AIproject from "./components/AIProject/aiproject";
-import WebProject from "./components/WebProject/webProject";
-import FSileread from "./components/Fileread/fileread";
-import Main from "./components/Main/Main";
-import Subheader from "./components/SubHeader/subHeader";
-import { Switch, Route } from "react-router-dom/cjs/react-router-dom";
-import TripleTen from "./components/TripleTen/TripleTen";
-import WhatToWear from "./components/WhatToWear/WhatToWear";
-import RecipeSearcher from "./components/RecipeSearcher/RecipeSearcher";
 
 function App() {
-  useEffect(() => {
-    document.title = "Tony Jin";
-  }, []);
   return (
-    <div className="Page">
-      <Subheader />
-      <div className="Page-body">
-        <Switch>
-          <Route exact path="/">
-            <Main />
-          </Route>
-          <Route path="/rage">
-            <Rage />
-          </Route>
-          <Route path="/AI">
-            <AIproject />
-          </Route>
-          <Route path="/web">
-            <WebProject />
-          </Route>
-          <Route path="/fileread">
-            <FSileread />
-          </Route>
-          <Route path="/tripleten">
-            <TripleTen />
-          </Route>
-          <Route path="/wtwr">
-            <WhatToWear />
-          </Route>
-          <Route path="/recipe-searcher">
-            <RecipeSearcher />
-          </Route>
-        </Switch>
+    <ThemeProvider>
+      <div className="App">
+        <Home />
       </div>
-      <footer className="Page-footer" />
-    </div>
+    </ThemeProvider>
   );
 }
 

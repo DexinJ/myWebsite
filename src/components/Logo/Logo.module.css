@@ -1,0 +1,20 @@
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.logoIcon {
+  width: 34px;
+  aspect-ratio: 0.97;
+  object-fit: contain;
+}
+
+.logoText {
+  width: 70px;
+  aspect-ratio: 2.5;
+  object-fit: contain;
+}

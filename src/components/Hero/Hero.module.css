@@ -1,0 +1,99 @@
+.hero {
+  display: flex;
+  width: 100%;
+  gap: 150px;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  padding: 262px 40px 200px;
+  box-sizing: border-box;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  width: 100%;
+}
+
+.aboveTitle {
+  color: var(--Cinder-Light, #656d72);
+  letter-spacing: 7.5px;
+  font: 500 12px/24px Inter, -apple-system, Roboto, Helvetica, sans-serif;
+}
+
+.name {
+  color: var(--Purple, #7e74f1);
+  margin-top: 16px;
+  font: 700 54px Plus Jakarta Sans, -apple-system, Roboto, Helvetica, sans-serif;
+}
+
+.highlight {
+  color: var(--primary-color);
+}
+
+.description {
+  color: var(--Cinder, #232e35);
+  margin-top: 36px;
+  font: 400 16px/32px Inter, -apple-system, Roboto, Helvetica, sans-serif;
+}
+
+.socialIcons {
+  width: 275px;
+  aspect-ratio: 3.72;
+  object-fit: contain;
+  margin-top: 36px;
+}
+
+.heroImage {
+  object-fit: cover;
+  max-width: 30%;
+  border-radius: 25px;
+  aspect-ratio: 1;
+  margin: auto auto;
+}
+
+.skillIcons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.skillIcon {
+  width: 40px;
+  height: 40px;
+}
+
+@media (max-width: 768px) {
+  .skillIcon {
+    width: 30px;
+    height: 30px;
+  }
+  .hero {
+    flex-wrap: wrap;
+    row-gap: 40px;
+    margin-top: 110px;
+  }
+  .heroImage {
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 991px) {
+  .hero {
+    max-width: 100%;
+    padding: 0 10px 100px;
+  }
+
+  .name {
+    font-size: 40px;
+  }
+
+  .description,
+  .socialIcons {
+    max-width: 100%;
+  }
+}

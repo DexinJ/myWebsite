@@ -1,0 +1,70 @@
+.experienceItem {
+  color: var(--Cinder-Light, #656d72);
+  font: 400 16px Inter, sans-serif;
+}
+
+.position {
+  color: var(--Cinder, #232e35);
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.company {
+  font-weight: 500;
+}
+
+.location,
+.period {
+  font-size: 14px;
+  margin-top: 16px;
+}
+
+.period {
+  font-weight: 500;
+}
+
+.tags {
+  display: flex;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.tag {
+  border-radius: 4px;
+  border: 1px solid var(--Light-2, #f1f1f1);
+  font-size: 12px;
+  font-weight: 500;
+  padding: 4px 8px;
+}
+
+.divider {
+  border: none;
+  border-top: 1px solid var(--Cinder);
+  margin: 31px 0;
+}
+
+.responsibilities {
+  list-style-type: none;
+  padding: 0;
+}
+
+.responsibilityItem {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 16px;
+  text-align: left;
+}
+
+.bullet {
+  background: var(--Cinder-Light);
+  width: 10px;
+  height: 2px;
+}
+
+@media (max-width: 991px) {
+  .experienceItem {
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,122 @@
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  max-width: 1440px;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: top 0.3s; /* Smooth transition for hiding and showing */
+  z-index: 1000;
+}
+
+.hidden {
+  top: -7.2rem; /* Hide the header when scrolling down */
+}
+
+.contents {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: auto;
+
+  padding: 1rem 1.5rem;
+}
+
+.rightContent {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.resumeButton {
+  background: none;
+  color: var(--text-color);
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.resumeButton:hover {
+  color: #007bff;
+}
+
+.menuButton {
+  display: none;
+}
+
+.menuIcon {
+  width: 24px;
+}
+
+.mobileMenu {
+  display: none;
+  background-color: var(--Light-1);
+}
+
+.mobileMenu > * {
+  margin-bottom: 1rem;
+}
+
+.mobileMenu button {
+  width: 100%;
+  text-align: left;
+  padding: 0.5rem 1rem;
+  background: none;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.mobileMenu button:hover {
+  background-color: #f0f0f0; /* Adjust as needed */
+}
+
+@media (max-width: 991px) {
+  .header {
+    max-width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .resumeButton {
+    text-align: left;
+    border: none;
+  }
+
+  .menuButton {
+    display: flex;
+    border-radius: 8px;
+    border: 1px solid var(--Light-2, #f1f1f1);
+    background: none;
+    color: var(--Cinder, #232e35);
+    font: 500 14px Inter, sans-serif;
+    cursor: pointer;
+    padding: 5px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .menuButton:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .mobileMenu {
+    position: fixed;
+    top: 0;
+    right: -100%; /* Start off-screen */
+    width: 300px; /* Adjust as needed */
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+    transition: right 0.2s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 1rem;
+    z-index: 1000;
+    height: 100vh;
+  }
+  .mobileMenu.open {
+    right: 0;
+  }
+}

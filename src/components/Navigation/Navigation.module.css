@@ -1,0 +1,51 @@
+.navigation {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem;
+}
+
+.navButton {
+  background: none;
+  border: none;
+  color: var(--text-color);
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.navButton:hover {
+  color: #007bff;
+}
+
+.navButton:focus {
+  outline: none;
+  color: #0056b3;
+}
+
+/* Add any additional styles to match the mobile menu buttons */
+
+.navLink {
+  text-decoration: none;
+  color: inherit;
+}
+
+.navLink:hover {
+  text-decoration: underline;
+}
+
+.navIcon {
+  width: 12px;
+  aspect-ratio: 4;
+  object-fit: contain;
+}
+
+@media (max-width: 991px) {
+  .navigation {
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0;
+  }
+}

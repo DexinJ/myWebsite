@@ -1,0 +1,132 @@
+.portfolio {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  background-color: var(--bg-color);
+  align-items: left;
+  color: var(--text-color);
+  padding: 80px 40px 200px;
+  box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  margin-top: 80px;
+}
+
+.aboveTitleLine {
+  background-color: var(--primary-color);
+  width: 16px;
+  height: 2px;
+}
+
+.aboveTitle {
+  color: var(--Cinder-Light, #656d72);
+  letter-spacing: 7.5px;
+  font: 500 12px/24px Inter, -apple-system, Roboto, Helvetica, sans-serif;
+}
+
+.title {
+  color: var(--Cinder, #232e35);
+  margin-top: 9px;
+  font: 700 36px Plus Jakarta Sans, -apple-system, Roboto, Helvetica, sans-serif;
+  text-align: left;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow: hidden;
+}
+.buttons {
+  align-self: flex-start;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.decorativeImage {
+  width: 96px;
+  aspect-ratio: 2.4;
+  object-fit: contain;
+  margin: 20px 0;
+}
+
+.items {
+  padding: 0;
+  margin: 40px 0 0;
+  width: 100%;
+}
+
+.navButton {
+  background-color: var(--Light-3);
+  border: none;
+  color: #333;
+  font-size: 1.5rem;
+  font-style: bold;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+  border-radius: 20px;
+}
+
+.navButton:hover {
+  opacity: 0.6;
+}
+
+.navButtonLeft {
+  padding: 15px 20px 15px 25px;
+}
+
+.navButtonRight {
+  padding: 15px 25px 15px 20px;
+}
+
+.arrow {
+  border: solid #7e74f1;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 5px;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+.slick-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider {
+  > div {
+    margin-inline: -50px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 991px) {
+  .portfolio {
+    max-width: 100%;
+    padding: 40px 10px;
+    justify-content: center;
+    display: flex;
+  }
+  .slider {
+    > div {
+      margin-inline: 0;
+      width: 100%;
+    }
+  }
+}
