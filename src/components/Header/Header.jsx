@@ -124,7 +124,7 @@ const Header = ({ scrollToSection }) => {
                 scrollToSection={scrollToSection}
               />
               <a
-                href="/path-to-resume.pdf"
+                href="/Resume/Tony_Jin_Resume.pdf"
                 className={styles.resumeButton}
                 onClick={handleMenuItemClick}
                 aria-label="Download Resume"
